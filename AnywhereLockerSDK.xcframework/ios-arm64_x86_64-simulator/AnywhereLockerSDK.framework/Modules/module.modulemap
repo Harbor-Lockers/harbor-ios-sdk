@@ -1,0 +1,11 @@
+framework module AnywhereLockerSDK {
+  umbrella header "AnywhereLockerSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module AnywhereLockerSDK.Swift {
+    header "AnywhereLockerSDK-Swift.h"
+    requires objc
+}
