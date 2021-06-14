@@ -1,14 +1,24 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AnywhereLockerSDK
+import Alamofire
 @_exported import AnywhereLockerSDK
 import CoreGraphics.CGBase
 import Combine
+import CommonCrypto
 import CoreBluetooth
 import CoreGraphics
+import CryptoKit
 import Foundation
 import Swift
 import UIKit
+@_hasMissingDesignatedInitializers @objc public class Tower : ObjectiveC.NSObject {
+  @objc final public let towerId: Foundation.Data!
+  @objc final public let towerName: Swift.String!
+  @objc public func peripheralUUID() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 open class CBORDecoder {
   open var userInfo: [Swift.CodingUserInfoKey : Any]
   public init()
@@ -45,40 +55,17 @@ extension AnyDecodable : Swift.CustomDebugStringConvertible {
     get
   }
 }
-public enum PERSISTENCE_ERROR : Swift.Error {
-  case PERSISTENCE_DELEGATE_NOT_SET
-  case KEY_ALREADY_EXISTS
-  case KEY_DOES_NOT_EXIST
-  case KEY_IS_NOT_ALPHANUMERIC
-  case STORAGE_DIRECTORY_ACCESS_FAILED
-  case STORAGE_DIRECTORY_ALREADY_EXISTS
-  case CONVERSION_STRING_DATA_FAILED
-  public static func == (a: AnywhereLockerSDK.PERSISTENCE_ERROR, b: AnywhereLockerSDK.PERSISTENCE_ERROR) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
-}
-public protocol PersistenceDelegate : ObjectiveC.NSObject {
-  func write(key: Swift.String, value: Foundation.Data, forced: Swift.Bool) throws
-  func read(key: Swift.String) throws -> Foundation.Data?
-  func getAllKeys() throws -> [Swift.String]
-  func delete(key: Swift.String) throws
-  func deleteAllKeys() throws
-  func sizeOf(key: Swift.String) throws -> Swift.UInt64
-  func sizeOfAllKeys() throws -> Swift.UInt64
-}
-@objc @_inheritsConvenienceInitializers public class PersistenceManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  public static func setDelegate(_ persistenceDelegate: AnywhereLockerSDK.PersistenceDelegate)
-  public static func getDelegate() throws -> AnywhereLockerSDK.PersistenceDelegate
-  @objc deinit
-}
 extension Data {
   public func cborHexStringFromJSON() -> Swift.String
   public func hexString() -> Swift.String
   public static func randomCryptoBytes(_ count: Swift.Int) throws -> Foundation.Data
   public init?(hexString: Swift.String)
+}
+extension NSData {
+  @objc dynamic public func initWith(hexString: Swift.String) -> Foundation.NSData?
+  @objc dynamic public func cborHexStringFromJSON() -> Swift.String
+  @objc dynamic public func hexString() -> Swift.String
+  @objc public static func randomCryptoBytes(_ count: Swift.Int) -> Foundation.NSData?
 }
 extension CBOR.NegativeUInt64 : Swift.Equatable {
   public static func == (lhs: AnywhereLockerSDK.CBOR.NegativeUInt64, rhs: AnywhereLockerSDK.CBOR.NegativeUInt64) -> Swift.Bool
@@ -107,8 +94,9 @@ extension CBOR.IndefiniteLengthData : Swift.Equatable {
 extension CBOR.IndefiniteLengthString : Swift.Equatable {
   public static func == (lhs: AnywhereLockerSDK.CBOR.IndefiniteLengthString, rhs: AnywhereLockerSDK.CBOR.IndefiniteLengthString) -> Swift.Bool
 }
-public typealias BLEConnectionResult = Swift.Result<Swift.String, Swift.Error>
+public typealias BLEConnectionResult = (Swift.String?, Swift.Error?) -> Swift.Void
 public typealias BLEResponseHandler = (Foundation.Data?, Swift.Error?) -> Swift.Void
+public typealias BLETowersDiscoveredHandler = ([AnywhereLockerSDK.Tower]) -> Swift.Void
 public struct CBOR {
   public struct Undefined {
   }
@@ -346,8 +334,8 @@ extension Half : Swift.BinaryFloatingPoint {
         return -1
     }
   }
-  public typealias RawSignificand = Swift.UInt16
   public typealias RawExponent = Swift.UInt
+  public typealias RawSignificand = Swift.UInt16
 }
 extension Half : Swift.ExpressibleByFloatLiteral {
   @_transparent public init(floatLiteral value: Swift.Float) {
@@ -662,6 +650,12 @@ extension Half : Swift.CustomPlaygroundDisplayConvertible {
     }
   }
 }
+public struct ECIES {
+  @available(iOS 13, *)
+  public static func encrypt(message: Foundation.Data, recipientPublicKey: CryptoKit.P256.KeyAgreement.PublicKey) throws -> (cipherText: Foundation.Data, ephemeralPublicKey: Foundation.Data)?
+  @available(iOS 13, *)
+  public static func decrypt(ephemeralPublicKey: Foundation.Data, cipherText: Foundation.Data, recipientPrivateKey: CryptoKit.P256.KeyAgreement.PrivateKey) throws -> Foundation.Data?
+}
 @_transparent public func acos(_ value: AnywhereLockerSDK.Half) -> AnywhereLockerSDK.Half {
     return Half(acos(Float(value)))
 }
@@ -777,10 +771,10 @@ open class CBOREncoder {
     case rfc3339
     case secondsSince1970
     public static func == (a: AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy, b: AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   open var dateEncodingStrategy: AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy
   open var includeCBORTag: Swift.Bool
@@ -801,36 +795,57 @@ extension CBOREncoderProtocol {
 extension CBOREncoder : Combine.TopLevelEncoder {
   public typealias Output = Foundation.Data
 }
-public protocol LALSDKConsole {
-  func printToConsole(_ string: Swift.String)
+@objc public protocol LALSDKConsole {
+  @objc func printToConsole(_ string: Swift.String)
 }
-@objc @_inheritsConvenienceInitializers public class LALSDK : ObjectiveC.NSObject {
-  public static let shared: AnywhereLockerSDK.LALSDK
-  public var outputConsole: AnywhereLockerSDK.LALSDKConsole? {
-    get
-    set
+@objc public protocol LALSDKDelegate {
+  @objc func lalDidDiscoverTowers(_ towers: [AnywhereLockerSDK.Tower])
+}
+@_inheritsConvenienceInitializers @objc public class LALSDK : ObjectiveC.NSObject {
+  @objc public static let shared: AnywhereLockerSDK.LALSDK
+  @objc public var delegate: AnywhereLockerSDK.LALSDKDelegate!
+  @objc public var outputConsole: AnywhereLockerSDK.LALSDKConsole? {
+    @objc get
+    @objc set
   }
-  public func startNordicUart(outputConsole: AnywhereLockerSDK.LALSDKConsole?, completion: @escaping (AnywhereLockerSDK.BLEConnectionResult) -> Swift.Void)
+  @objc public var encryptionEnabled: Swift.Bool
+  @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping AnywhereLockerSDK.APIResponseWithStatusCode)
+  @objc public func startTowerDiscovery(outputConsole: AnywhereLockerSDK.LALSDKConsole?)
+  @objc public func connectToTower(_ tower: AnywhereLockerSDK.Tower, completion: @escaping AnywhereLockerSDK.BLEConnectionResult)
   @objc override dynamic public init()
   @objc deinit
 }
 extension LALSDK {
-  public func sendData(_ data: Foundation.Data)
-  public func sendRequestSession(sessionMac: Foundation.Data)
-  public func sendSyncStatus(firstEventId: Swift.UInt32, eventsCount: Swift.Int)
-  public func sendSyncPull(firstEventId: Swift.UInt32?, eventsCountMax: Swift.Int?)
-  public func sendMarkEventSyncCounter(firstEventId: Swift.UInt32)
-  public func sendRequestLockerAvailability()
-  public func sendOpenLocker(lockerId: Swift.Int? = nil, lockerType: Swift.Int? = nil, reopenWindow: Swift.Int? = nil)
-  public func sendReopenLocker(lockerId: Swift.Int, reopenToken: Foundation.Data)
-}
-public struct Delivery : Swift.Codable {
-  public let id: Swift.String?
-  public let accessCode: Swift.String?
-  public let pickupToken: Swift.String?
-  public let locationId: Swift.String?
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  @objc dynamic public func sendData(_ data: Foundation.Data)
+  @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data)
+  @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?)
+  @objc dynamic public func sendInstallKey(keyId: Swift.Int, keyRotation: Swift.Int, keyExpires: Foundation.Date, keyData: Foundation.Data, keyLocator: Swift.String)
+  @objc dynamic public func sendSunsetKey(keyId: Swift.Int, keyRotation: Swift.Int)
+  @objc dynamic public func sendRevokeKey(keyId: Swift.Int, keyRotation: Swift.Int)
+  @objc dynamic public func sendRequestSyncStatus()
+  @objc dynamic public func sendSyncPull(syncEventStart: Swift.UInt32)
+  @objc dynamic public func sendSyncPush(towerId: Foundation.Data, commands: [Foundation.Data], payloadAuth: Foundation.Data)
+  @objc dynamic public func sendMarkSeenEvents(syncEventStart: Swift.UInt32)
+  @objc dynamic public func sendFindAvailableLockers()
+  @objc dynamic public func sendFindLockersWithToken(matchAvailable: Swift.Bool, matchToken: Foundation.Data)
+  @objc dynamic public func sendOpenLocker(payload: Foundation.Data, payloadAuth: Foundation.Data)
+  @objc dynamic public func sendOpenAvailableLocker(matchLockerType: Swift.Int, matchAvailable: Swift.Bool, matchToken: Foundation.Data?, lockerToken: Foundation.Data, lockerAvailable: Swift.Bool, clientInfo: Foundation.Data)
+  @objc dynamic public func sendReopenLocker()
+  @objc dynamic public func sendCheckLockerDoor()
+  @objc dynamic public func sendGetDeviceInfo()
+  @objc dynamic public func sendGetKeyInfo(keyId: Swift.Int, keyRotation: Swift.Int)
+  @objc dynamic public func sendGetLockerInfo(lockerId: Swift.Int)
+  @objc dynamic public func sendFireLock(lockerPhysicalId: Swift.Int)
+  @objc dynamic public func sendReadPortStatus(lockerPhysicalId: Swift.Int)
+  @objc dynamic public func sendSetClock(timestamp: Swift.Int)
+  @objc dynamic public func sendSetLockerToken(lockerId: Swift.Int, lockerToken: Foundation.Data)
+  @objc dynamic public func sendSetLockerAvailable(lockerId: Swift.Int, lockerAvailable: Swift.Bool)
+  @objc dynamic public func sendSetLockerDisabled(lockerId: Swift.Int, lockerDisabled: Swift.Bool)
+  @objc dynamic public func sendSetTowerId(towerId: Foundation.Data)
+  @objc dynamic public func sendSetTowerSerial(towerSerial: Foundation.Data)
+  @objc dynamic public func sendSetTowerName(towerName: Swift.String)
+  @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int)
+  @objc dynamic public func sendRebootDevice()
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -863,8 +878,8 @@ extension AnyCodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
 extension AnyCodable : Swift.ExpressibleByStringLiteral {
-  public typealias StringLiteralType = Swift.String
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
 extension AnyCodable : Swift.ExpressibleByArrayLiteral {
@@ -874,6 +889,7 @@ extension AnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
+public typealias APIResponseWithStatusCode = (Swift.Int, Swift.Error?, Swift.String?) -> Swift.Void
 extension CBOR.Undefined : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -964,8 +980,8 @@ extension AnyEncodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
 extension AnyEncodable : Swift.ExpressibleByStringLiteral {
-  public typealias StringLiteralType = Swift.String
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
 extension AnyEncodable : Swift.ExpressibleByStringInterpolation {
@@ -1004,7 +1020,5 @@ extension Half : Swift.Codable {
         try container.encode(Float(self))
     }
 }
-extension AnywhereLockerSDK.PERSISTENCE_ERROR : Swift.Equatable {}
-extension AnywhereLockerSDK.PERSISTENCE_ERROR : Swift.Hashable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Equatable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Hashable {}
