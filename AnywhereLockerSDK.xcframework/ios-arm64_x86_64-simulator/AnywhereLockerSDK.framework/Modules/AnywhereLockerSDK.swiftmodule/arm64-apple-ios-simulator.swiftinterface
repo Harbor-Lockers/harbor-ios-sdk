@@ -816,7 +816,7 @@ extension LALSDK {
   @objc dynamic public func sendOpenLocker(payload: Foundation.Data, payloadAuth: Foundation.Data)
   @objc dynamic public func sendOpenAvailableLocker(matchLockerType: Swift.Int, matchAvailable: Swift.Bool, matchToken: Foundation.Data?, lockerToken: Foundation.Data, lockerAvailable: Swift.Bool, clientInfo: Foundation.Data)
   @objc dynamic public func sendReopenLocker()
-  @objc dynamic public func sendCheckLockerDoor()
+  @objc dynamic public func sendCheckLockerDoor(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc dynamic public func sendGetDeviceInfo()
   @objc dynamic public func sendGetKeyInfo(keyId: Swift.Int, keyRotation: Swift.Int)
   @objc dynamic public func sendGetLockerInfo(lockerId: Swift.Int)

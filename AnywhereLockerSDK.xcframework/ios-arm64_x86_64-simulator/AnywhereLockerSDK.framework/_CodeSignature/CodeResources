@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AnywhereLockerSDK-Swift.h</key>
 		<data>
-		rlv9Jkdt1G5hPZt31L3Fio11A0Q=
+		3UZW8vqGMRTkHwTiUQC9c6pfkrY=
 		</data>
 		<key>Headers/AnywhereLockerSDK.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mXt7lyvMLD273+yvJA8ryfgrtaI=
+		SkmjJFMY5dJNnL1TvVjRoz4RQbo=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/OYi06t0Gr12csVlr24OoyALD20=
+		aXCMdfJ0X1Lsvb3XlvAc39xiv6Q=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		mXt7lyvMLD273+yvJA8ryfgrtaI=
+		SkmjJFMY5dJNnL1TvVjRoz4RQbo=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/OYi06t0Gr12csVlr24OoyALD20=
+		aXCMdfJ0X1Lsvb3XlvAc39xiv6Q=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+pMi2Y3yWgUnd+eQC/1v9MQ3WvA=
+		4oyqLLXO+SFn5RVQnCslMhtci84=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gX0WdtGXQOP6LFsnuLW0kX5Ck64=
+		nz78HA5BA5hP9LjSpv+2Ovzru6Q=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		+pMi2Y3yWgUnd+eQC/1v9MQ3WvA=
+		4oyqLLXO+SFn5RVQnCslMhtci84=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		gX0WdtGXQOP6LFsnuLW0kX5Ck64=
+		nz78HA5BA5hP9LjSpv+2Ovzru6Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvfMKVGErOBAPZ8L59uPx+EcPT1IEM8Kuc5Y+UxPtsU=
+			1iGXwdAC6DiCqOwdu8y+xvbPSaZUppUn6/dC5u+fsTQ=
 			</data>
 		</dict>
 		<key>Headers/AnywhereLockerSDK.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J7E137P9GMZScKFDjbmMwO5a7Nz5P0220xzc/FIOU10=
+			F+JR6ZhIwhW6hBKLA1d4lEXdTLV8oImU0cTKwZ/LZzI=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k7O+oPKVG71xLsJtjhPXzUgk7SpuZwGClG3MPd86kd0=
+			ktKe7Dni+2ipTldyBn3GoUD2kaZzcq4kV4rQuatmOk4=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
@@ -139,14 +139,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J7E137P9GMZScKFDjbmMwO5a7Nz5P0220xzc/FIOU10=
+			F+JR6ZhIwhW6hBKLA1d4lEXdTLV8oImU0cTKwZ/LZzI=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k7O+oPKVG71xLsJtjhPXzUgk7SpuZwGClG3MPd86kd0=
+			ktKe7Dni+2ipTldyBn3GoUD2kaZzcq4kV4rQuatmOk4=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -160,14 +160,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rasbQKMWzGUX4U2fKbaMILsngiLMIej9HxDHDE41qqo=
+			toMxpi3lMYkrEBXhzyqEVwYYEupo7XjgMRZheCkccA4=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mGIeYQv77igKRMMv+lMs6FxOFN8v+N8U1Pxw2JWi00U=
+			HMRh9Cj7O2hG0iHdbZb1xrtM2MXBm9NBODdQkQlSfpg=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -181,14 +181,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rasbQKMWzGUX4U2fKbaMILsngiLMIej9HxDHDE41qqo=
+			toMxpi3lMYkrEBXhzyqEVwYYEupo7XjgMRZheCkccA4=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mGIeYQv77igKRMMv+lMs6FxOFN8v+N8U1Pxw2JWi00U=
+			HMRh9Cj7O2hG0iHdbZb1xrtM2MXBm9NBODdQkQlSfpg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -260,7 +260,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 ///
 - (void)sendOpenAvailableLockerWithMatchLockerType:(NSInteger)matchLockerType matchAvailable:(BOOL)matchAvailable matchToken:(NSData * _Nullable)matchToken lockerToken:(NSData * _Nonnull)lockerToken lockerAvailable:(BOOL)lockerAvailable clientInfo:(NSData * _Nonnull)clientInfo;
 - (void)sendReopenLocker;
-- (void)sendCheckLockerDoor;
+- (void)sendCheckLockerDoorWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)sendGetDeviceInfo;
 - (void)sendGetKeyInfoWithKeyId:(NSInteger)keyId keyRotation:(NSInteger)keyRotation;
 - (void)sendGetLockerInfoWithLockerId:(NSInteger)lockerId;
