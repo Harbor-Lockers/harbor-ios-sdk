@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AnywhereLockerSDK
 @_exported import AnywhereLockerSDK
 import CoreGraphics.CGBase
@@ -794,6 +794,7 @@ extension CBOREncoderProtocol {
 extension CBOREncoder : Combine.TopLevelEncoder {
   public typealias Output = Foundation.Data
 }
+public typealias CommandSentResponseHandler = (Swift.Bool, Foundation.NSError?) -> Swift.Void
 @objc public protocol LALSDKConsole {
   @objc func printToConsole(_ string: Swift.String)
 }
@@ -807,7 +808,6 @@ extension CBOREncoder : Combine.TopLevelEncoder {
     @objc get
     @objc set
   }
-  @objc public var encryptionEnabled: Swift.Bool
   @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping AnywhereLockerSDK.APIResponseWithStatusCode)
   @objc public func startTowerDiscovery(outputConsole: AnywhereLockerSDK.LALSDKConsole?)
   @objc public func connectToTower(_ tower: AnywhereLockerSDK.Tower, completion: @escaping AnywhereLockerSDK.BLEConnectionResult)
@@ -816,35 +816,55 @@ extension CBOREncoder : Combine.TopLevelEncoder {
 }
 extension LALSDK {
   @objc dynamic public func sendData(_ data: Foundation.Data)
-  @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data)
-  @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?)
-  @objc dynamic public func sendInstallKey(keyId: Swift.Int, keyRotation: Swift.Int, keyExpires: Foundation.Date, keyData: Foundation.Data, keyLocator: Swift.String)
-  @objc dynamic public func sendSunsetKey(keyId: Swift.Int, keyRotation: Swift.Int)
-  @objc dynamic public func sendRevokeKey(keyId: Swift.Int, keyRotation: Swift.Int)
-  @objc dynamic public func sendRequestSyncStatus()
-  @objc dynamic public func sendSyncPull(syncEventStart: Swift.UInt32)
-  @objc dynamic public func sendSyncPush(towerId: Foundation.Data, commands: [Foundation.Data], payloadAuth: Foundation.Data)
-  @objc dynamic public func sendMarkSeenEvents(syncEventStart: Swift.UInt32)
-  @objc dynamic public func sendFindAvailableLockers()
-  @objc dynamic public func sendFindLockersWithToken(matchAvailable: Swift.Bool, matchToken: Foundation.Data)
-  @objc dynamic public func sendOpenLocker(payload: Foundation.Data, payloadAuth: Foundation.Data)
-  @objc dynamic public func sendOpenAvailableLocker(matchLockerType: Swift.Int, matchAvailable: Swift.Bool, matchToken: Foundation.Data?, lockerToken: Foundation.Data, lockerAvailable: Swift.Bool, clientInfo: Foundation.Data)
-  @objc dynamic public func sendReopenLocker()
-  @objc dynamic public func sendCheckLockerDoor(completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc dynamic public func sendGetDeviceInfo()
-  @objc dynamic public func sendGetKeyInfo(keyId: Swift.Int, keyRotation: Swift.Int)
-  @objc dynamic public func sendGetLockerInfo(lockerId: Swift.Int)
-  @objc dynamic public func sendFireLock(lockerPhysicalId: Swift.Int)
-  @objc dynamic public func sendReadPortStatus(lockerPhysicalId: Swift.Int)
-  @objc dynamic public func sendSetClock(timestamp: Swift.Int)
-  @objc dynamic public func sendSetLockerToken(lockerId: Swift.Int, lockerToken: Foundation.Data)
-  @objc dynamic public func sendSetLockerAvailable(lockerId: Swift.Int, lockerAvailable: Swift.Bool)
-  @objc dynamic public func sendSetLockerDisabled(lockerId: Swift.Int, lockerDisabled: Swift.Bool)
-  @objc dynamic public func sendSetTowerId(towerId: Foundation.Data)
-  @objc dynamic public func sendSetTowerSerial(towerSerial: Foundation.Data)
-  @objc dynamic public func sendSetTowerName(towerName: Swift.String)
-  @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int)
-  @objc dynamic public func sendRebootDevice()
+  @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, completionHandler: @escaping AnywhereLockerSDK.CommandSentResponseHandler)
+  @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendInstallKey(keyId: Swift.Int, keyRotation: Swift.Int, keyExpires: Foundation.Date, keyData: Foundation.Data, keyLocator: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSunsetKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendRevokeKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  #warning("We might want to remove some of the sync events from the public interface as sync must be handled entirely by the SDK.")
+  @objc dynamic public func sendRequestSyncStatus(completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendSyncPull(syncEventStart: Swift.UInt32, completionHandler: @escaping (Swift.Int, Swift.Int, Foundation.Data, Foundation.Data, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendSyncPush(payload: Foundation.Data, payloadAuth: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendMarkSeenEvents(syncEventStart: Swift.UInt32, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendResetEventCounter(syncEventStart: Swift.UInt32, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendResetCommandCounter(syncCommandStart: Swift.UInt32, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendAddClientEvent(clientInfo: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendFindAvailableLockers(completionHandler: @escaping ([Swift.Int : Swift.Int]?, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendFindLockersWithToken(matchAvailable: Swift.Bool, matchToken: Foundation.Data, completionHandler: @escaping ([Swift.Int : Swift.Int]?, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendOpenLockerWithToken(payload: Foundation.Data, payloadAuth: Foundation.Data, completionHandler: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendOpenAvailableLocker(matchLockerType: Swift.Int, matchAvailable: Swift.Bool, matchToken: Foundation.Data?, lockerToken: Foundation.Data, lockerAvailable: Swift.Bool, clientInfo: Foundation.Data, completionHandler: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendReopenLocker(completionHandler: @escaping (Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendCheckLockerDoor(completionHandler: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendRevertLockerState(clientInfo: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetKeypadCode(keypadCode: Swift.String, keypadCodePersists: Swift.Bool, keypadNextToken: Foundation.Data, keypadNextAvailable: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendTapLocker(lockerTapIntervalMS: Swift.Int, lockerTapCount: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendCheckAllLockerDoors(completionHandler: @escaping (Foundation.Data?, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendGetDeviceInfo(completionHandler: @escaping (Foundation.Data, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.Int, Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendGetKeyInfo(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: @escaping (Swift.Bool, Swift.Bool, Swift.Int, Swift.String, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendGetLockerInfo(lockerId: Swift.Int, completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Swift.Bool, Foundation.Data, Swift.Bool, Swift.String, Foundation.Data, Swift.Bool, Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendReadDeviceStatus(completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Swift.Bool, Swift.String, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendFireLock(lockerPhysicalId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendControlLight(lockerPhysicalId: Swift.Int, lockerLightOn: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendReadPortStatus(lockerPhysicalId: Swift.Int, completionHandler: @escaping (Swift.Bool, Swift.Bool, Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendSoundBuzzer(buzzerSound: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetClock(timestamp: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetSolenoidDelay(solenoidDelay: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendReadKeypad(completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendSetLockerToken(lockerId: Swift.Int, lockerToken: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetLockerAvailable(lockerId: Swift.Int, lockerAvailable: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetLockerKeypad(lockerId: Swift.Int, keypadCode: Swift.String, keypadCodePersists: Swift.Bool, keypadNextToken: Foundation.Data, keypadNextAvailable: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetLockerDisabled(lockerId: Swift.Int, lockerDisabled: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendReadCounter(counterId: Swift.Int, completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
+  @objc dynamic public func sendResetCounter(counterId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerId(towerId: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerSerial(towerSerial: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerName(towerName: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerDisabled(towerDisabled: Swift.Bool, towerReason: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendAdjustClock(adjustClock: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendRebootDevice(completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendBeginFirmwareUpdate(clearAllState: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendFactoryReset(completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -888,7 +908,7 @@ extension AnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
-public typealias APIResponseWithStatusCode = (Swift.Int, Swift.Error?, Swift.String?) -> Swift.Void
+public typealias APIResponseWithStatusCode = (Swift.Int, Foundation.NSError?) -> Swift.Void
 extension CBOR.Undefined : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
