@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import NordicDFU;
 @import ObjectiveC;
 #endif
 
@@ -228,19 +229,48 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 
 
 
+@interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK)) <DFUProgressDelegate, DFUServiceDelegate>
+- (void)dfuProgressDidChangeFor:(NSInteger)part outOf:(NSInteger)totalParts to:(NSInteger)progress currentSpeedBytesPerSecond:(double)currentSpeedBytesPerSecond avgSpeedBytesPerSecond:(double)avgSpeedBytesPerSecond;
+- (void)dfuStateDidChangeTo:(enum DFUState)state;
+- (void)dfuError:(enum DFUError)error didOccurWithMessage:(NSString * _Nonnull)message;
+@end
+
 @class NSData;
+enum SessionPermission : NSInteger;
 @class NSDate;
+@class NSURL;
 
 @interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK))
-- (void)sendData:(NSData * _Nonnull)data;
+/// Establishes a session with a tower. This is a convenience method that can be used if you don’t want to store the Request session payload, payload auth and session seed to send it later. The SDK must be initialized with the provider credentials as the Harbor API will verify it can provide a session with the requested permissions.
+/// \param towerId The ID of the tower you want to connect to. If none is provided, it’ll request a session to the connected tower.
+///
+/// \param duration The duration while the requested session packet will be valid to establish a session.
+///
+/// \param sessionPermissions Session permissions to request for.
+///
+/// \param completionHandler Success if the session was granted successfully.
+///
+- (void)establishSessionWithTowerId:(NSData * _Nullable)towerId duration:(NSInteger)duration sessionPermissions:(enum SessionPermission)sessionPermissions completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
+/// Requests a session token to connect to a specified tower. The SDK must be initialized with the provider credentials as the Harbor API will verify it can provide a session with the requested permissions. The returned payload, payloadAuth and sessionSeed must be passed to the <code>sendRequestSession</code> method. These values can be stored to connect to the tower while being offline.
+/// \param towerId The ID of the tower you want to connect to. If none is provided, it’ll request a session to the connected tower.
+///
+/// \param duration The duration while the requested session packet will be valid to establish a session.
+///
+/// \param sessionPermissions Session permissions to request for.
+///
+/// \param completionHandler A completion handler containing the payload, payloadAuth and sessionSeed that must be provided to the <code>sendRequestSession</code> method to establish the session with the tower.
+///
+- (void)getSessionRequestWithTowerId:(NSData * _Nullable)towerId duration:(NSInteger)duration sessionPermissions:(enum SessionPermission)sessionPermissions completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSData * _Nullable, NSData * _Nullable, NSData * _Nullable, NSError * _Nullable))completionHandler;
 /// Creates a Request Session packet and send it to the connected device to establish a session. A Grant Session response is automatically processed by this function to execute the completion handler
 /// \param payloadAuth Payload auth provided by the server. Contains the signature of the encrypted payload.
 ///
 /// \param payload Encrypted payload provided by the server.
 ///
+/// \param sessionSeed A seed provided by the server to validate a session once it’s established.
+///
 /// \param completionHandler Success if the session was granted successfully.
 ///
-- (void)sendRequestSessionWithPayloadAuth:(NSData * _Nonnull)payloadAuth payload:(NSData * _Nonnull)payload completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendRequestSessionWithPayloadAuth:(NSData * _Nonnull)payloadAuth payload:(NSData * _Nonnull)payload sessionSeed:(NSData * _Nonnull)sessionSeed completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Terminate Session packet and send it to the connected device to terminate a session. If the provided error code is > 0, an <code>errorMessage</code> must be provided and the device will log an Error Event with the provided error code and error message.
 /// \param errorCode A code to log in the terminate session event on the device side. May be 0 if no error occured.
 ///
@@ -248,7 +278,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 ///
 /// \param completionHandler Success if the session was terminated successfully.
 ///
-- (void)sendTerminateSessionWithErrorCode:(NSInteger)errorCode errorMessage:(NSString * _Nullable)errorMessage completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendTerminateSessionWithErrorCode:(NSInteger)errorCode errorMessage:(NSString * _Nullable)errorMessage disconnectAfterSessionTerminated:(BOOL)disconnectAfterSessionTerminated completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 /// Technician/System command. Creates an Install Key packet and send it to the connected device.
 /// \param keyId The key slot to replace in the device. Must be a number between 1 and 4.
 ///
@@ -676,7 +706,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 ///
 /// \param completionHandler Success if the tower serial was set.
 ///
-- (void)sendSetTowerSerialWithTowerSerial:(NSData * _Nonnull)towerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendSetTowerSerialWithInfoTowerSerial:(NSString * _Nonnull)infoTowerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Set Tower Name packet and send it to the connected device.
 /// \param towerName The tower name to set to the tower.
 ///
@@ -716,7 +746,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 ///
 /// \param completionHandler Success if the device was rebooted into firmware update mode (DFU).
 ///
-- (void)sendBeginFirmwareUpdateWithClearAllState:(BOOL)clearAllState completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendBeginFirmwareUpdateWithClearAllState:(BOOL)clearAllState fileURL:(NSURL * _Nonnull)fileURL completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Factory Reset packet and send it to the connected device.
 /// \param completionHandler Success if the device was factory reset.
 ///
@@ -742,6 +772,15 @@ SWIFT_PROTOCOL("_TtP17AnywhereLockerSDK14LALSDKDelegate_")
 - (NSString * _Nonnull)hexString SWIFT_WARN_UNUSED_RESULT;
 + (NSData * _Nullable)randomCryptoBytes:(NSInteger)count SWIFT_WARN_UNUSED_RESULT;
 @end
+
+typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
+  SessionPermissionSync = 0,
+  SessionPermissionLockerPickup = 1,
+  SessionPermissionLockerDelivery = 2,
+  SessionPermissionOwner = 3,
+  SessionPermissionTechnician = 4,
+  SessionPermissionDeveloper = 5,
+};
 
 
 SWIFT_CLASS("_TtC17AnywhereLockerSDK5Tower")

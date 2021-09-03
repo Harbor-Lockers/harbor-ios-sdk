@@ -7,8 +7,8 @@ import Combine
 import CommonCrypto
 import CoreBluetooth
 import CoreGraphics
-import CryptoKit
 import Foundation
+import NordicDFU
 import Swift
 import UIKit
 @_hasMissingDesignatedInitializers @objc public class Tower : ObjectiveC.NSObject {
@@ -139,6 +139,14 @@ public struct CBOR {
   public struct CBOREncoded {
     public let encodedData: Foundation.Data
     public init(encodedData: Foundation.Data)
+  }
+}
+@objc public enum SessionPermission : Swift.Int {
+  case Sync, LockerPickup, LockerDelivery, Owner, Technician, Developer
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
   }
 }
 @frozen public struct Half {
@@ -649,12 +657,6 @@ extension Half : Swift.CustomPlaygroundDisplayConvertible {
     }
   }
 }
-public struct ECIES {
-  @available(iOS 13, *)
-  public static func encrypt(message: Foundation.Data, recipientPublicKey: CryptoKit.P256.KeyAgreement.PublicKey) throws -> (cipherText: Foundation.Data, ephemeralPublicKey: Foundation.Data)?
-  @available(iOS 13, *)
-  public static func decrypt(ephemeralPublicKey: Foundation.Data, cipherText: Foundation.Data, recipientPrivateKey: CryptoKit.P256.KeyAgreement.PrivateKey) throws -> Foundation.Data?
-}
 @_transparent public func acos(_ value: AnywhereLockerSDK.Half) -> AnywhereLockerSDK.Half {
     return Half(acos(Float(value)))
 }
@@ -804,10 +806,7 @@ public typealias CommandSentResponseHandler = (Swift.Bool, Foundation.NSError?) 
 @_inheritsConvenienceInitializers @objc public class LALSDK : ObjectiveC.NSObject {
   @objc public static let shared: AnywhereLockerSDK.LALSDK
   @objc public var delegate: AnywhereLockerSDK.LALSDKDelegate!
-  @objc public var outputConsole: AnywhereLockerSDK.LALSDKConsole? {
-    @objc get
-    @objc set
-  }
+  @objc public var outputConsole: AnywhereLockerSDK.LALSDKConsole?
   @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping AnywhereLockerSDK.APIResponseWithStatusCode)
   @objc public func startTowerDiscovery(outputConsole: AnywhereLockerSDK.LALSDKConsole?)
   @objc public func connectToTower(_ tower: AnywhereLockerSDK.Tower, completion: @escaping AnywhereLockerSDK.BLEConnectionResult)
@@ -815,9 +814,10 @@ public typealias CommandSentResponseHandler = (Swift.Bool, Foundation.NSError?) 
   @objc deinit
 }
 extension LALSDK {
-  @objc dynamic public func sendData(_ data: Foundation.Data)
-  @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, completionHandler: @escaping AnywhereLockerSDK.CommandSentResponseHandler)
-  @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func establishSession(towerId: Foundation.Data?, duration: Swift.Int = 600, sessionPermissions: AnywhereLockerSDK.SessionPermission, completionHandler: @escaping AnywhereLockerSDK.CommandSentResponseHandler)
+  @objc dynamic public func getSessionRequest(towerId: Foundation.Data?, duration: Swift.Int = 3600, sessionPermissions: AnywhereLockerSDK.SessionPermission, completionHandler: @escaping AnywhereLockerSDK.RequestTowerSessionAPIResponse)
+  @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, sessionSeed: Foundation.Data, completionHandler: @escaping AnywhereLockerSDK.CommandSentResponseHandler)
+  @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?, disconnectAfterSessionTerminated: Swift.Bool = true, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendInstallKey(keyId: Swift.Int, keyRotation: Swift.Int, keyExpires: Foundation.Date, keyData: Foundation.Data, keyLocator: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSunsetKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendRevokeKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
@@ -857,14 +857,19 @@ extension LALSDK {
   @objc dynamic public func sendReadCounter(counterId: Swift.Int, completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
   @objc dynamic public func sendResetCounter(counterId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerId(towerId: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerSerial(towerSerial: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerSerial(infoTowerSerial: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerName(towerName: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerDisabled(towerDisabled: Swift.Bool, towerReason: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendAdjustClock(adjustClock: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendRebootDevice(completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendBeginFirmwareUpdate(clearAllState: Swift.Bool, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendBeginFirmwareUpdate(clearAllState: Swift.Bool, fileURL: Foundation.URL, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendFactoryReset(completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+}
+extension LALSDK : NordicDFU.DFUServiceDelegate, NordicDFU.DFUProgressDelegate {
+  @objc dynamic public func dfuProgressDidChange(for part: Swift.Int, outOf totalParts: Swift.Int, to progress: Swift.Int, currentSpeedBytesPerSecond: Swift.Double, avgSpeedBytesPerSecond: Swift.Double)
+  @objc dynamic public func dfuStateDidChange(to state: NordicDFU.DFUState)
+  @objc dynamic public func dfuError(_ error: NordicDFU.DFUError, didOccurWithMessage message: Swift.String)
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -909,6 +914,7 @@ extension AnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Value = Any
 }
 public typealias APIResponseWithStatusCode = (Swift.Int, Foundation.NSError?) -> Swift.Void
+public typealias RequestTowerSessionAPIResponse = (Foundation.Data?, Foundation.Data?, Foundation.Data?, Foundation.Data?, Foundation.NSError?) -> Swift.Void
 extension CBOR.Undefined : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -1039,5 +1045,8 @@ extension Half : Swift.Codable {
         try container.encode(Float(self))
     }
 }
+extension AnywhereLockerSDK.SessionPermission : Swift.Equatable {}
+extension AnywhereLockerSDK.SessionPermission : Swift.Hashable {}
+extension AnywhereLockerSDK.SessionPermission : Swift.RawRepresentable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Equatable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Hashable {}
