@@ -191,7 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import NordicDFU;
 @import ObjectiveC;
 #endif
 
@@ -209,6 +208,119 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="AnywhereLockerSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+
+typedef SWIFT_ENUM(NSInteger, DFUError, open) {
+  DFUErrorRemoteLegacyDFUSuccess = 1,
+  DFUErrorRemoteLegacyDFUInvalidState = 2,
+  DFUErrorRemoteLegacyDFUNotSupported = 3,
+  DFUErrorRemoteLegacyDFUDataExceedsLimit = 4,
+  DFUErrorRemoteLegacyDFUCrcError = 5,
+  DFUErrorRemoteLegacyDFUOperationFailed = 6,
+  DFUErrorRemoteSecureDFUSuccess = 11,
+  DFUErrorRemoteSecureDFUOpCodeNotSupported = 12,
+  DFUErrorRemoteSecureDFUInvalidParameter = 13,
+  DFUErrorRemoteSecureDFUInsufficientResources = 14,
+  DFUErrorRemoteSecureDFUInvalidObject = 15,
+  DFUErrorRemoteSecureDFUSignatureMismatch = 16,
+  DFUErrorRemoteSecureDFUUnsupportedType = 17,
+  DFUErrorRemoteSecureDFUOperationNotPermitted = 18,
+  DFUErrorRemoteSecureDFUOperationFailed = 20,
+  DFUErrorRemoteSecureDFUExtendedError = 21,
+  DFUErrorRemoteExtendedErrorWrongCommandFormat = 22,
+  DFUErrorRemoteExtendedErrorUnknownCommand = 23,
+  DFUErrorRemoteExtendedErrorInitCommandInvalid = 24,
+  DFUErrorRemoteExtendedErrorFwVersionFailure = 25,
+  DFUErrorRemoteExtendedErrorHwVersionFailure = 26,
+  DFUErrorRemoteExtendedErrorSdVersionFailure = 27,
+  DFUErrorRemoteExtendedErrorSignatureMissing = 28,
+  DFUErrorRemoteExtendedErrorWrongHashType = 29,
+  DFUErrorRemoteExtendedErrorHashFailed = 30,
+  DFUErrorRemoteExtendedErrorWrongSignatureType = 31,
+  DFUErrorRemoteExtendedErrorVerificationFailed = 32,
+  DFUErrorRemoteExtendedErrorInsufficientSpace = 33,
+  DFUErrorRemoteExperimentalButtonlessDFUSuccess = 9001,
+  DFUErrorRemoteExperimentalButtonlessDFUOpCodeNotSupported = 9002,
+  DFUErrorRemoteExperimentalButtonlessDFUOperationFailed = 9004,
+  DFUErrorRemoteButtonlessDFUSuccess = 91,
+  DFUErrorRemoteButtonlessDFUOpCodeNotSupported = 92,
+  DFUErrorRemoteButtonlessDFUOperationFailed = 94,
+  DFUErrorRemoteButtonlessDFUInvalidAdvertisementName = 95,
+  DFUErrorRemoteButtonlessDFUBusy = 96,
+  DFUErrorRemoteButtonlessDFUNotBonded = 97,
+/// Providing the DFUFirmware is required.
+  DFUErrorFileNotSpecified = 101,
+/// Given firmware file is not supported.
+  DFUErrorFileInvalid = 102,
+/// Since SDK 7.0.0 the DFU Bootloader requires the extended Init Packet.
+/// For more details, see:
+/// http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v11.0.0/bledfu_example_init.html?cp=4_0_0_4_2_1_1_3
+  DFUErrorExtendedInitPacketRequired = 103,
+/// Before SDK 7.0.0 the init packet could have contained only 2-byte CRC
+/// value, and was optional. Providing an extended one instead would cause
+/// CRC error during validation (the bootloader assumes that the 2 first
+/// bytes of the init packet are the firmware CRC).
+  DFUErrorInitPacketRequired = 104,
+  DFUErrorFailedToConnect = 201,
+  DFUErrorDeviceDisconnected = 202,
+  DFUErrorBluetoothDisabled = 203,
+  DFUErrorServiceDiscoveryFailed = 301,
+  DFUErrorDeviceNotSupported = 302,
+  DFUErrorReadingVersionFailed = 303,
+  DFUErrorEnablingControlPointFailed = 304,
+  DFUErrorWritingCharacteristicFailed = 305,
+  DFUErrorReceivingNotificationFailed = 306,
+  DFUErrorUnsupportedResponse = 307,
+/// Error raised during upload when the number of bytes sent is not equal to
+/// number of bytes confirmed in Packet Receipt Notification.
+  DFUErrorBytesLost = 308,
+/// Error raised when the CRC reported by the remote device does not match.
+/// Service has done 3 attempts to send the data.
+  DFUErrorCrcError = 309,
+/// The service went into an invalid state. The service will try to close
+/// without crashing. Recovery to a know state is not possible.
+  DFUErrorInvalidInternalState = 500,
+};
+
+/// The state of the DFU Service.
+/// <ul>
+///   <li>
+///     connecting:      Service is connecting to the DFU target.
+///   </li>
+///   <li>
+///     starting:        DFU Service is initializing DFU operation.
+///   </li>
+///   <li>
+///     enablingDfuMode: Service is switching the device to DFU mode.
+///   </li>
+///   <li>
+///     uploading:       Service is uploading the firmware.
+///   </li>
+///   <li>
+///     validating:      The DFU target is validating the firmware.
+///   </li>
+///   <li>
+///     disconnecting:   The iDevice is disconnecting or waiting for disconnection.
+///   </li>
+///   <li>
+///     completed:       DFU operation is completed and successful.
+///   </li>
+///   <li>
+///     aborted:         DFU Operation was aborted.
+///   </li>
+/// </ul>
+typedef SWIFT_ENUM(NSInteger, DFUState, open) {
+  DFUStateConnecting = 0,
+  DFUStateStarting = 1,
+  DFUStateEnablingDfuMode = 2,
+  DFUStateUploading = 3,
+  DFUStateValidating = 4,
+  DFUStateDisconnecting = 5,
+  DFUStateCompleted = 6,
+  DFUStateAborted = 7,
+};
+
 
 @protocol LALSDKDelegate;
 @protocol LALSDKConsole;
@@ -231,7 +343,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 
 
 
-@interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK)) <DFUProgressDelegate, DFUServiceDelegate>
+@interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK))
 - (void)dfuProgressDidChangeFor:(NSInteger)part outOf:(NSInteger)totalParts to:(NSInteger)progress currentSpeedBytesPerSecond:(double)currentSpeedBytesPerSecond avgSpeedBytesPerSecond:(double)avgSpeedBytesPerSecond;
 - (void)dfuStateDidChangeTo:(enum DFUState)state;
 - (void)dfuError:(enum DFUError)error didOccurWithMessage:(NSString * _Nonnull)message;
@@ -992,7 +1104,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import NordicDFU;
 @import ObjectiveC;
 #endif
 
@@ -1010,6 +1121,119 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="AnywhereLockerSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+
+typedef SWIFT_ENUM(NSInteger, DFUError, open) {
+  DFUErrorRemoteLegacyDFUSuccess = 1,
+  DFUErrorRemoteLegacyDFUInvalidState = 2,
+  DFUErrorRemoteLegacyDFUNotSupported = 3,
+  DFUErrorRemoteLegacyDFUDataExceedsLimit = 4,
+  DFUErrorRemoteLegacyDFUCrcError = 5,
+  DFUErrorRemoteLegacyDFUOperationFailed = 6,
+  DFUErrorRemoteSecureDFUSuccess = 11,
+  DFUErrorRemoteSecureDFUOpCodeNotSupported = 12,
+  DFUErrorRemoteSecureDFUInvalidParameter = 13,
+  DFUErrorRemoteSecureDFUInsufficientResources = 14,
+  DFUErrorRemoteSecureDFUInvalidObject = 15,
+  DFUErrorRemoteSecureDFUSignatureMismatch = 16,
+  DFUErrorRemoteSecureDFUUnsupportedType = 17,
+  DFUErrorRemoteSecureDFUOperationNotPermitted = 18,
+  DFUErrorRemoteSecureDFUOperationFailed = 20,
+  DFUErrorRemoteSecureDFUExtendedError = 21,
+  DFUErrorRemoteExtendedErrorWrongCommandFormat = 22,
+  DFUErrorRemoteExtendedErrorUnknownCommand = 23,
+  DFUErrorRemoteExtendedErrorInitCommandInvalid = 24,
+  DFUErrorRemoteExtendedErrorFwVersionFailure = 25,
+  DFUErrorRemoteExtendedErrorHwVersionFailure = 26,
+  DFUErrorRemoteExtendedErrorSdVersionFailure = 27,
+  DFUErrorRemoteExtendedErrorSignatureMissing = 28,
+  DFUErrorRemoteExtendedErrorWrongHashType = 29,
+  DFUErrorRemoteExtendedErrorHashFailed = 30,
+  DFUErrorRemoteExtendedErrorWrongSignatureType = 31,
+  DFUErrorRemoteExtendedErrorVerificationFailed = 32,
+  DFUErrorRemoteExtendedErrorInsufficientSpace = 33,
+  DFUErrorRemoteExperimentalButtonlessDFUSuccess = 9001,
+  DFUErrorRemoteExperimentalButtonlessDFUOpCodeNotSupported = 9002,
+  DFUErrorRemoteExperimentalButtonlessDFUOperationFailed = 9004,
+  DFUErrorRemoteButtonlessDFUSuccess = 91,
+  DFUErrorRemoteButtonlessDFUOpCodeNotSupported = 92,
+  DFUErrorRemoteButtonlessDFUOperationFailed = 94,
+  DFUErrorRemoteButtonlessDFUInvalidAdvertisementName = 95,
+  DFUErrorRemoteButtonlessDFUBusy = 96,
+  DFUErrorRemoteButtonlessDFUNotBonded = 97,
+/// Providing the DFUFirmware is required.
+  DFUErrorFileNotSpecified = 101,
+/// Given firmware file is not supported.
+  DFUErrorFileInvalid = 102,
+/// Since SDK 7.0.0 the DFU Bootloader requires the extended Init Packet.
+/// For more details, see:
+/// http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v11.0.0/bledfu_example_init.html?cp=4_0_0_4_2_1_1_3
+  DFUErrorExtendedInitPacketRequired = 103,
+/// Before SDK 7.0.0 the init packet could have contained only 2-byte CRC
+/// value, and was optional. Providing an extended one instead would cause
+/// CRC error during validation (the bootloader assumes that the 2 first
+/// bytes of the init packet are the firmware CRC).
+  DFUErrorInitPacketRequired = 104,
+  DFUErrorFailedToConnect = 201,
+  DFUErrorDeviceDisconnected = 202,
+  DFUErrorBluetoothDisabled = 203,
+  DFUErrorServiceDiscoveryFailed = 301,
+  DFUErrorDeviceNotSupported = 302,
+  DFUErrorReadingVersionFailed = 303,
+  DFUErrorEnablingControlPointFailed = 304,
+  DFUErrorWritingCharacteristicFailed = 305,
+  DFUErrorReceivingNotificationFailed = 306,
+  DFUErrorUnsupportedResponse = 307,
+/// Error raised during upload when the number of bytes sent is not equal to
+/// number of bytes confirmed in Packet Receipt Notification.
+  DFUErrorBytesLost = 308,
+/// Error raised when the CRC reported by the remote device does not match.
+/// Service has done 3 attempts to send the data.
+  DFUErrorCrcError = 309,
+/// The service went into an invalid state. The service will try to close
+/// without crashing. Recovery to a know state is not possible.
+  DFUErrorInvalidInternalState = 500,
+};
+
+/// The state of the DFU Service.
+/// <ul>
+///   <li>
+///     connecting:      Service is connecting to the DFU target.
+///   </li>
+///   <li>
+///     starting:        DFU Service is initializing DFU operation.
+///   </li>
+///   <li>
+///     enablingDfuMode: Service is switching the device to DFU mode.
+///   </li>
+///   <li>
+///     uploading:       Service is uploading the firmware.
+///   </li>
+///   <li>
+///     validating:      The DFU target is validating the firmware.
+///   </li>
+///   <li>
+///     disconnecting:   The iDevice is disconnecting or waiting for disconnection.
+///   </li>
+///   <li>
+///     completed:       DFU operation is completed and successful.
+///   </li>
+///   <li>
+///     aborted:         DFU Operation was aborted.
+///   </li>
+/// </ul>
+typedef SWIFT_ENUM(NSInteger, DFUState, open) {
+  DFUStateConnecting = 0,
+  DFUStateStarting = 1,
+  DFUStateEnablingDfuMode = 2,
+  DFUStateUploading = 3,
+  DFUStateValidating = 4,
+  DFUStateDisconnecting = 5,
+  DFUStateCompleted = 6,
+  DFUStateAborted = 7,
+};
+
 
 @protocol LALSDKDelegate;
 @protocol LALSDKConsole;
@@ -1032,7 +1256,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LALSDK * _No
 
 
 
-@interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK)) <DFUProgressDelegate, DFUServiceDelegate>
+@interface LALSDK (SWIFT_EXTENSION(AnywhereLockerSDK))
 - (void)dfuProgressDidChangeFor:(NSInteger)part outOf:(NSInteger)totalParts to:(NSInteger)progress currentSpeedBytesPerSecond:(double)currentSpeedBytesPerSecond avgSpeedBytesPerSecond:(double)avgSpeedBytesPerSecond;
 - (void)dfuStateDidChangeTo:(enum DFUState)state;
 - (void)dfuError:(enum DFUError)error didOccurWithMessage:(NSString * _Nonnull)message;

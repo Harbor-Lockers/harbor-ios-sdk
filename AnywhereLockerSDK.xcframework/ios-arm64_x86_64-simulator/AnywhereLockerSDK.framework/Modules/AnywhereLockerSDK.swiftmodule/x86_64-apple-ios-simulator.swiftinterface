@@ -5,10 +5,12 @@
 import CoreGraphics.CGBase
 import Combine
 import CommonCrypto
+import Compression
 import CoreBluetooth
+import CoreFoundation
 import CoreGraphics
+import Dispatch
 import Foundation
-import NordicDFU
 import Swift
 import UIKit
 @_hasMissingDesignatedInitializers @objc public class Tower : ObjectiveC.NSObject {
@@ -866,10 +868,86 @@ extension LALSDK {
   @objc dynamic public func sendBeginFirmwareUpdate(clearAllState: Swift.Bool, fileURL: Foundation.URL, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendFactoryReset(completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
 }
-extension LALSDK : NordicDFU.DFUServiceDelegate, NordicDFU.DFUProgressDelegate {
+extension LALSDK {
   @objc dynamic public func dfuProgressDidChange(for part: Swift.Int, outOf totalParts: Swift.Int, to progress: Swift.Int, currentSpeedBytesPerSecond: Swift.Double, avgSpeedBytesPerSecond: Swift.Double)
-  @objc dynamic public func dfuStateDidChange(to state: NordicDFU.DFUState)
-  @objc dynamic public func dfuError(_ error: NordicDFU.DFUError, didOccurWithMessage message: Swift.String)
+  @objc dynamic public func dfuStateDidChange(to state: AnywhereLockerSDK.DFUState)
+  @objc dynamic public func dfuError(_ error: AnywhereLockerSDK.DFUError, didOccurWithMessage message: Swift.String)
+}
+@objc public enum DFUError : Swift.Int {
+  case remoteLegacyDFUSuccess = 1
+  case remoteLegacyDFUInvalidState = 2
+  case remoteLegacyDFUNotSupported = 3
+  case remoteLegacyDFUDataExceedsLimit = 4
+  case remoteLegacyDFUCrcError = 5
+  case remoteLegacyDFUOperationFailed = 6
+  case remoteSecureDFUSuccess = 11
+  case remoteSecureDFUOpCodeNotSupported = 12
+  case remoteSecureDFUInvalidParameter = 13
+  case remoteSecureDFUInsufficientResources = 14
+  case remoteSecureDFUInvalidObject = 15
+  case remoteSecureDFUSignatureMismatch = 16
+  case remoteSecureDFUUnsupportedType = 17
+  case remoteSecureDFUOperationNotPermitted = 18
+  case remoteSecureDFUOperationFailed = 20
+  case remoteSecureDFUExtendedError = 21
+  case remoteExtendedErrorWrongCommandFormat = 22
+  case remoteExtendedErrorUnknownCommand = 23
+  case remoteExtendedErrorInitCommandInvalid = 24
+  case remoteExtendedErrorFwVersionFailure = 25
+  case remoteExtendedErrorHwVersionFailure = 26
+  case remoteExtendedErrorSdVersionFailure = 27
+  case remoteExtendedErrorSignatureMissing = 28
+  case remoteExtendedErrorWrongHashType = 29
+  case remoteExtendedErrorHashFailed = 30
+  case remoteExtendedErrorWrongSignatureType = 31
+  case remoteExtendedErrorVerificationFailed = 32
+  case remoteExtendedErrorInsufficientSpace = 33
+  case remoteExperimentalButtonlessDFUSuccess = 9001
+  case remoteExperimentalButtonlessDFUOpCodeNotSupported = 9002
+  case remoteExperimentalButtonlessDFUOperationFailed = 9004
+  case remoteButtonlessDFUSuccess = 91
+  case remoteButtonlessDFUOpCodeNotSupported = 92
+  case remoteButtonlessDFUOperationFailed = 94
+  case remoteButtonlessDFUInvalidAdvertisementName = 95
+  case remoteButtonlessDFUBusy = 96
+  case remoteButtonlessDFUNotBonded = 97
+  case fileNotSpecified = 101
+  case fileInvalid = 102
+  case extendedInitPacketRequired = 103
+  case initPacketRequired = 104
+  case failedToConnect = 201
+  case deviceDisconnected = 202
+  case bluetoothDisabled = 203
+  case serviceDiscoveryFailed = 301
+  case deviceNotSupported = 302
+  case readingVersionFailed = 303
+  case enablingControlPointFailed = 304
+  case writingCharacteristicFailed = 305
+  case receivingNotificationFailed = 306
+  case unsupportedResponse = 307
+  case bytesLost = 308
+  case crcError = 309
+  case invalidInternalState = 500
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum DFUState : Swift.Int {
+  case connecting
+  case starting
+  case enablingDfuMode
+  case uploading
+  case validating
+  case disconnecting
+  case completed
+  case aborted
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -1050,3 +1128,9 @@ extension AnywhereLockerSDK.SessionPermission : Swift.Hashable {}
 extension AnywhereLockerSDK.SessionPermission : Swift.RawRepresentable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Equatable {}
 extension AnywhereLockerSDK.CBOREncoder.DateEncodingStrategy : Swift.Hashable {}
+extension AnywhereLockerSDK.DFUError : Swift.Equatable {}
+extension AnywhereLockerSDK.DFUError : Swift.Hashable {}
+extension AnywhereLockerSDK.DFUError : Swift.RawRepresentable {}
+extension AnywhereLockerSDK.DFUState : Swift.Equatable {}
+extension AnywhereLockerSDK.DFUState : Swift.Hashable {}
+extension AnywhereLockerSDK.DFUState : Swift.RawRepresentable {}
