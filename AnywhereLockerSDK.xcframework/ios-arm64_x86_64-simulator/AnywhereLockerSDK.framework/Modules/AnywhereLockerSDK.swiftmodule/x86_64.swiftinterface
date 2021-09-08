@@ -859,7 +859,7 @@ extension LALSDK {
   @objc dynamic public func sendReadCounter(counterId: Swift.Int, completionHandler: @escaping (Swift.Int, Swift.Int, Swift.Int, Foundation.NSError?) -> Swift.Void)
   @objc dynamic public func sendResetCounter(counterId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerId(towerId: Foundation.Data, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerSerial(infoTowerSerial: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
+  @objc dynamic public func sendSetTowerSerial(towerSerial: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerName(towerName: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendSetTowerDisabled(towerDisabled: Swift.Bool, towerReason: Swift.String, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int, completionHandler: AnywhereLockerSDK.CommandSentResponseHandler?)

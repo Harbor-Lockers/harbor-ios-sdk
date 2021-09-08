@@ -386,7 +386,7 @@ enum SessionPermission : NSInteger;
 ///
 - (void)sendRequestSessionWithPayloadAuth:(NSData * _Nonnull)payloadAuth payload:(NSData * _Nonnull)payload sessionSeed:(NSData * _Nonnull)sessionSeed completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Terminate Session packet and send it to the connected device to terminate a session. If the provided error code is > 0, an <code>errorMessage</code> must be provided and the device will log an Error Event with the provided error code and error message.
-/// \param errorCode A code to log in the terminate session event on the device side. May be 0 if no error occured.
+/// \param errorCode A code to log in the terminate session event on the device side. May be 0 if no error occurred.
 ///
 /// \param errorMessage The message to store in the error event log.
 ///
@@ -592,13 +592,13 @@ enum SessionPermission : NSInteger;
 ///
 /// \param towerName The tower name configured in the device
 ///
-/// \param infoDeviceModel The device model of the device.
+/// \param deviceModel The device model of the device.
 ///
-/// \param infoDeviceSerial The device serial of the device.
+/// \param deviceSerial The device serial of the device.
 ///
-/// \param infoTowerSerial The tower serial of the device.
+/// \param towerSerial The tower serial of the device.
 ///
-/// \param infoFirmwareVersion The firmware version running on the device.
+/// \param firmwareVersion The firmware version running on the device.
 ///
 /// \param mainboardId The ID of the mainboard
 ///
@@ -638,11 +638,11 @@ enum SessionPermission : NSInteger;
 ///
 /// \param lockerTypeId Configured locker type.
 ///
-/// \param lockerAvailable Wether the locker is available or not.
+/// \param lockerAvailable Whether the locker is available or not.
 ///
 /// \param lockerToken Current locker token, if any is associated.
 ///
-/// \param lockerDisabled Wether the locker is disabled or not.
+/// \param lockerDisabled Whether the locker is disabled or not.
 ///
 /// \param keypadCode Current keypad code for pickup
 ///
@@ -658,13 +658,13 @@ enum SessionPermission : NSInteger;
 /// Creates a Read Device Status packet and send it to the connected device. In order to validate the response data, you need to check for the error object in the completion handler. If a valid Read Device Status command is sent, the completion handler will have the the device status values.
 /// \param completionHandler A completion handler block
 ///
-/// \param infoTemperature Current temperature in Celsius degrees, as a fixed-point integer with 4 bits of fraction.
+/// \param temperature Current temperature in Celsius degrees, as a fixed-point integer with 4 bits of fraction.
 ///
-/// \param infoClockTime Current date and time, according to the RTC
+/// \param clockTime Current date and time, according to the RTC
 ///
-/// \param infoBatteryCharge How much charge is remaining in the battery (estimated)
+/// \param batteryCharge How much charge is remaining in the battery (estimated)
 ///
-/// \param towerDisabled A flag indicating wether the tower is disabled or not.
+/// \param towerDisabled A flag indicating whether the tower is disabled or not.
 ///
 /// \param towerReason The reason given for the tower being disabled.
 ///
@@ -680,7 +680,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Control Light packet and send it to the connected device.
 /// \param lockerPhysicalId The port of the lock to control the light of.
 ///
-/// \param lockerLightOn Wether to turn on or off the light on the lock.
+/// \param lockerLightOn Whether to turn on or off the light on the lock.
 ///
 /// \param completionHandler Success if the command was sent successfully.
 ///
@@ -764,7 +764,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Set Locker Available packet and send it to the connected device.
 /// \param lockerId The ID of the locker to set as available.
 ///
-/// \param lockerAvailable Wether to set the locker as available or not.
+/// \param lockerAvailable Whether to set the locker as available or not.
 ///
 /// \param completionHandler Success if the token was set correctly.
 ///
@@ -774,7 +774,7 @@ enum SessionPermission : NSInteger;
 ///
 /// \param keypadCode The keypad code to set to the locker.
 ///
-/// \param keypadCodePersists Wether the keypad code will persist after it’s used to open the locker.
+/// \param keypadCodePersists Whether the keypad code will persist after it’s used to open the locker.
 ///
 /// \param keypadNextToken The token to assign to the locker if it’s open with the Keypad code.
 ///
@@ -786,7 +786,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Set Locker Disabled packet and send it to the connected device.
 /// \param lockerId The ID of the locker to set the disabled flag.
 ///
-/// \param lockerDisabled Wether to disable the locker or not.
+/// \param lockerDisabled Whether to disable the locker or not.
 ///
 /// \param completionHandler Success if the token was set correctly.
 ///
@@ -820,7 +820,7 @@ enum SessionPermission : NSInteger;
 ///
 /// \param completionHandler Success if the tower serial was set.
 ///
-- (void)sendSetTowerSerialWithInfoTowerSerial:(NSString * _Nonnull)infoTowerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendSetTowerSerialWithTowerSerial:(NSString * _Nonnull)towerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Set Tower Name packet and send it to the connected device.
 /// \param towerName The tower name to set to the tower.
 ///
@@ -1299,7 +1299,7 @@ enum SessionPermission : NSInteger;
 ///
 - (void)sendRequestSessionWithPayloadAuth:(NSData * _Nonnull)payloadAuth payload:(NSData * _Nonnull)payload sessionSeed:(NSData * _Nonnull)sessionSeed completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Terminate Session packet and send it to the connected device to terminate a session. If the provided error code is > 0, an <code>errorMessage</code> must be provided and the device will log an Error Event with the provided error code and error message.
-/// \param errorCode A code to log in the terminate session event on the device side. May be 0 if no error occured.
+/// \param errorCode A code to log in the terminate session event on the device side. May be 0 if no error occurred.
 ///
 /// \param errorMessage The message to store in the error event log.
 ///
@@ -1505,13 +1505,13 @@ enum SessionPermission : NSInteger;
 ///
 /// \param towerName The tower name configured in the device
 ///
-/// \param infoDeviceModel The device model of the device.
+/// \param deviceModel The device model of the device.
 ///
-/// \param infoDeviceSerial The device serial of the device.
+/// \param deviceSerial The device serial of the device.
 ///
-/// \param infoTowerSerial The tower serial of the device.
+/// \param towerSerial The tower serial of the device.
 ///
-/// \param infoFirmwareVersion The firmware version running on the device.
+/// \param firmwareVersion The firmware version running on the device.
 ///
 /// \param mainboardId The ID of the mainboard
 ///
@@ -1551,11 +1551,11 @@ enum SessionPermission : NSInteger;
 ///
 /// \param lockerTypeId Configured locker type.
 ///
-/// \param lockerAvailable Wether the locker is available or not.
+/// \param lockerAvailable Whether the locker is available or not.
 ///
 /// \param lockerToken Current locker token, if any is associated.
 ///
-/// \param lockerDisabled Wether the locker is disabled or not.
+/// \param lockerDisabled Whether the locker is disabled or not.
 ///
 /// \param keypadCode Current keypad code for pickup
 ///
@@ -1571,13 +1571,13 @@ enum SessionPermission : NSInteger;
 /// Creates a Read Device Status packet and send it to the connected device. In order to validate the response data, you need to check for the error object in the completion handler. If a valid Read Device Status command is sent, the completion handler will have the the device status values.
 /// \param completionHandler A completion handler block
 ///
-/// \param infoTemperature Current temperature in Celsius degrees, as a fixed-point integer with 4 bits of fraction.
+/// \param temperature Current temperature in Celsius degrees, as a fixed-point integer with 4 bits of fraction.
 ///
-/// \param infoClockTime Current date and time, according to the RTC
+/// \param clockTime Current date and time, according to the RTC
 ///
-/// \param infoBatteryCharge How much charge is remaining in the battery (estimated)
+/// \param batteryCharge How much charge is remaining in the battery (estimated)
 ///
-/// \param towerDisabled A flag indicating wether the tower is disabled or not.
+/// \param towerDisabled A flag indicating whether the tower is disabled or not.
 ///
 /// \param towerReason The reason given for the tower being disabled.
 ///
@@ -1593,7 +1593,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Control Light packet and send it to the connected device.
 /// \param lockerPhysicalId The port of the lock to control the light of.
 ///
-/// \param lockerLightOn Wether to turn on or off the light on the lock.
+/// \param lockerLightOn Whether to turn on or off the light on the lock.
 ///
 /// \param completionHandler Success if the command was sent successfully.
 ///
@@ -1677,7 +1677,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Set Locker Available packet and send it to the connected device.
 /// \param lockerId The ID of the locker to set as available.
 ///
-/// \param lockerAvailable Wether to set the locker as available or not.
+/// \param lockerAvailable Whether to set the locker as available or not.
 ///
 /// \param completionHandler Success if the token was set correctly.
 ///
@@ -1687,7 +1687,7 @@ enum SessionPermission : NSInteger;
 ///
 /// \param keypadCode The keypad code to set to the locker.
 ///
-/// \param keypadCodePersists Wether the keypad code will persist after it’s used to open the locker.
+/// \param keypadCodePersists Whether the keypad code will persist after it’s used to open the locker.
 ///
 /// \param keypadNextToken The token to assign to the locker if it’s open with the Keypad code.
 ///
@@ -1699,7 +1699,7 @@ enum SessionPermission : NSInteger;
 /// Creates a Set Locker Disabled packet and send it to the connected device.
 /// \param lockerId The ID of the locker to set the disabled flag.
 ///
-/// \param lockerDisabled Wether to disable the locker or not.
+/// \param lockerDisabled Whether to disable the locker or not.
 ///
 /// \param completionHandler Success if the token was set correctly.
 ///
@@ -1733,7 +1733,7 @@ enum SessionPermission : NSInteger;
 ///
 /// \param completionHandler Success if the tower serial was set.
 ///
-- (void)sendSetTowerSerialWithInfoTowerSerial:(NSString * _Nonnull)infoTowerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
+- (void)sendSetTowerSerialWithTowerSerial:(NSString * _Nonnull)towerSerial completionHandler:(void (^ _Nullable)(BOOL, NSError * _Nullable))completionHandler;
 /// Creates a Set Tower Name packet and send it to the connected device.
 /// \param towerName The tower name to set to the tower.
 ///
