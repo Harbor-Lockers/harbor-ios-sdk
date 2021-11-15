@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AnywhereLockerSDK'
-  s.version          = '0.1.9'
+  s.version          = '0.1.10'
   s.summary          = 'SDK To access Luxer Anywhere Lockers.'
 
 # This description is used to generate tags and improve search results.

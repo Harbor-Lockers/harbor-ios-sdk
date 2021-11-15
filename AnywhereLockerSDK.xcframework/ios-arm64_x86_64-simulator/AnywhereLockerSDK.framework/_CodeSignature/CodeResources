@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AnywhereLockerSDK-Swift.h</key>
 		<data>
-		RqoIy2vX1wwy3dMkdimH04RvtrE=
+		IrqtZKJOsP60pK1DER2y+UKaVt8=
 		</data>
 		<key>Headers/AnywhereLockerSDK.h</key>
 		<data>
@@ -22,55 +22,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N6AFI6LSXf7AFyQUCSj2Tnww+WE=
+		GXp3hrO2/uldLqeGWZrSyGX7M0s=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		N+/l7lwL+mT1+J4zuqHlAtYxNt0=
+		xiSbQf76UUzuTyhFFcRRiknURH8=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E6ox23yXm5a7DEgYKMLbpxW4130=
+		nAFEoQlNYeVfl+KK77zeTY0QADs=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EzDXNNSnZsoTL1ZdG4fmY5A94dA=
+		ovPXDIAzmZllx5IQ+YPd8mriB74=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		N+/l7lwL+mT1+J4zuqHlAtYxNt0=
+		xiSbQf76UUzuTyhFFcRRiknURH8=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		E6ox23yXm5a7DEgYKMLbpxW4130=
+		nAFEoQlNYeVfl+KK77zeTY0QADs=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		EzDXNNSnZsoTL1ZdG4fmY5A94dA=
+		ovPXDIAzmZllx5IQ+YPd8mriB74=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nRBVbznTSaRnoi5Ck4y0DlUCnq8=
+		T7AR6iSP0npQvNc6DusShq3ob9k=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lF7bGooZjlMV8uFSWqtVFYUpA3U=
+		vV1AZxgiTUjpeWStbUygssC7X+I=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uJel9QN8wB5JC0pheVwRGPpBlqw=
+		vhLUHQr3oQQT4/hNciwn4a6hVUs=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		nRBVbznTSaRnoi5Ck4y0DlUCnq8=
+		T7AR6iSP0npQvNc6DusShq3ob9k=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		lF7bGooZjlMV8uFSWqtVFYUpA3U=
+		vV1AZxgiTUjpeWStbUygssC7X+I=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		uJel9QN8wB5JC0pheVwRGPpBlqw=
+		vhLUHQr3oQQT4/hNciwn4a6hVUs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dN69tuR+RBla0cUawiDDDrM4Vu3984M9GIe2aalGys=
+			mZ4TjAkAbAojsjLIri21z8KfcYVaHVPneq/VduW5/1o=
 			</data>
 		</dict>
 		<key>Headers/AnywhereLockerSDK.h</key>
@@ -115,84 +115,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ek+Mwl6dtfL56Vmr9pGweLZqd6vRQGmJU44kXMcAnK8=
+			Xzn3nhbD/1HqHe7AKxq4dFzxIuzaw2e4mxrSpFXCmvY=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			erHk76cLPH1y/qYhrvUo0qyu40uaLbmmd3jS7B3+hNY=
+			KBhV7cGvf6PzLGZGKOMHYIeXGhfFYR9S6Xd3n5lMH4o=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CfPmvL+nuCijRbrdJz8JKaggCRl0DJKcRbSW4ICFQD0=
+			6NlY/K/UWYwTrtsA/9oy8erwcym1R4OfGtck6V4QZVY=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ek+Mwl6dtfL56Vmr9pGweLZqd6vRQGmJU44kXMcAnK8=
+			Xzn3nhbD/1HqHe7AKxq4dFzxIuzaw2e4mxrSpFXCmvY=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			erHk76cLPH1y/qYhrvUo0qyu40uaLbmmd3jS7B3+hNY=
+			KBhV7cGvf6PzLGZGKOMHYIeXGhfFYR9S6Xd3n5lMH4o=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CfPmvL+nuCijRbrdJz8JKaggCRl0DJKcRbSW4ICFQD0=
+			6NlY/K/UWYwTrtsA/9oy8erwcym1R4OfGtck6V4QZVY=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yWqzZ36YgkFbRo3eBi+/cFZnraWyYqewpkpke1xC8WA=
+			mG4d2lrUOtm8vGpJrXiVLewWfRdk37dzVlDYS5DOl8o=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y0uKdbEzZw3m8aC3KNZbNhlbXckH54mNvEUpCpln6cQ=
+			IRNzmu4yRSRZQFyxtK40uEqGWkKVZwaq3YAAAFJzTu0=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rOLO4syS6Cp/4ilNg1tP76oMk87FlZXb2YapF7zsHnE=
+			1kF26oCRWYOea/cAEs3r0Q4JnRv5aaRETCKSZukweN0=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yWqzZ36YgkFbRo3eBi+/cFZnraWyYqewpkpke1xC8WA=
+			mG4d2lrUOtm8vGpJrXiVLewWfRdk37dzVlDYS5DOl8o=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y0uKdbEzZw3m8aC3KNZbNhlbXckH54mNvEUpCpln6cQ=
+			IRNzmu4yRSRZQFyxtK40uEqGWkKVZwaq3YAAAFJzTu0=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rOLO4syS6Cp/4ilNg1tP76oMk87FlZXb2YapF7zsHnE=
+			1kF26oCRWYOea/cAEs3r0Q4JnRv5aaRETCKSZukweN0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

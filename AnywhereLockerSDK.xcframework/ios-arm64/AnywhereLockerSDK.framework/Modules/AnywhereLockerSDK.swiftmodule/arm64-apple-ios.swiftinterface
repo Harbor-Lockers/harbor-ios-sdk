@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AnywhereLockerSDK
 @_exported import AnywhereLockerSDK
 import CoreGraphics.CGBase
@@ -797,6 +797,8 @@ public typealias CommandSentResponseHandler = (_ success: Swift.Bool, _ error: F
   @objc public var outputConsole: AnywhereLockerSDK.LALSDKConsole?
   @objc public func setBaseURL(_ baseURL: Swift.String)
   @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping AnywhereLockerSDK.APIResponseWithStatusCode)
+  @objc public func setAccessToken(_ token: Swift.String)
+  @objc public func setEnvironment(_ environment: AnywhereLockerSDK.Environment)
   @objc public func downloadTowerConfiguration(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
   @objc public func startTowerDiscovery(outputConsole: AnywhereLockerSDK.LALSDKConsole?)
   @objc public func connectToTower(_ tower: AnywhereLockerSDK.Tower, completion: @escaping AnywhereLockerSDK.BLEConnectionResult)
@@ -983,6 +985,15 @@ extension AnywhereLockerSDK.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
 public typealias APIResponseWithStatusCode = (_ responseCode: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void
 public typealias RequestTowerSessionAPIResponse = (_ payload: Foundation.Data?, _ payloadAuth: Foundation.Data?, _ sessionSeed: Foundation.Data?, _ towerId: Foundation.Data?, _ error: Foundation.NSError?) -> Swift.Void
 public typealias RequestTowerConfigurationAPIResponse = (_ towerId: Foundation.Data?, _ commands: [Foundation.Data]?, _ error: Foundation.NSError?) -> Swift.Void
+@objc public enum Environment : Swift.Int {
+  case Development = 0
+  case Production = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension AnywhereLockerSDK.CBOR.Undefined : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -1125,3 +1136,6 @@ extension AnywhereLockerSDK.DFUError : Swift.RawRepresentable {}
 extension AnywhereLockerSDK.DFUState : Swift.Equatable {}
 extension AnywhereLockerSDK.DFUState : Swift.Hashable {}
 extension AnywhereLockerSDK.DFUState : Swift.RawRepresentable {}
+extension AnywhereLockerSDK.Environment : Swift.Equatable {}
+extension AnywhereLockerSDK.Environment : Swift.Hashable {}
+extension AnywhereLockerSDK.Environment : Swift.RawRepresentable {}
