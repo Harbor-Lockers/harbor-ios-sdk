@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AnywhereLockerSDK'
-  s.version          = '0.1.10'
+  s.version          = '1.0.0'
   s.summary          = 'SDK To access Luxer Anywhere Lockers.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ The Luxer Anywhere Locker SDK allows you to communicate and connect to our distr
 
   s.homepage         = 'https://bitbucket.org/luxer-one-team/public-lal-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Lucas Diez de Medina' => 'lucaslt89@gmail.com' }
+  s.author           = { 'Lucas Diez de Medina' => 'lucas@theluxergroup.com' }
   s.source           = { :git => 'https://bitbucket.org/luxer-one-team/public-lal-ios-sdk', :tag => s.version } 
 
   s.ios.deployment_target = '12.0'

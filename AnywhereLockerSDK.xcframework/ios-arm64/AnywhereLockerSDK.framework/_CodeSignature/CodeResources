@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dAU1Rxe2bWS+t/50KGVrASgAUaA=
+		2UgC3Z/PB3KmGCMQ7cZ8+sY2FIM=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		deTg+evQEJgWE8zJ6otVq9EvJag=
+		e9Y/uWhKr+mhg5BLbxZtYwEBXWk=
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		deTg+evQEJgWE8zJ6otVq9EvJag=
+		e9Y/uWhKr+mhg5BLbxZtYwEBXWk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvODa8ls0d4wj1QsxntBj+JkF988JqI3haOHWpeNYKY=
+			TUktI4ECfYoGopIA1j1DtQrYJETdizf//bhdeqEPK6M=
 			</data>
 		</dict>
 		<key>Modules/AnywhereLockerSDK.swiftmodule/arm64.swiftdoc</key>
@@ -126,7 +126,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvODa8ls0d4wj1QsxntBj+JkF988JqI3haOHWpeNYKY=
+			TUktI4ECfYoGopIA1j1DtQrYJETdizf//bhdeqEPK6M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
