@@ -1,0 +1,11 @@
+framework module HarborLockersSDK {
+  umbrella header "HarborLockersSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module HarborLockersSDK.Swift {
+    header "HarborLockersSDK-Swift.h"
+    requires objc
+}

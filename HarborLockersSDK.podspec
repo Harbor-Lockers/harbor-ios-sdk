@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint AnywhereLockerSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint HarborLockersSDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -24,12 +24,12 @@ The Harbor Lockers SDK allows you to communicate and connect to our distributed 
 • Request a packet to open a locker
                        DESC
 
-  s.homepage         = 'https://bitbucket.org/luxer-one-team/public-lal-ios-sdk'
+  s.homepage         = 'https://github.com/Harbor-Lockers/harbor-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lucas Diez de Medina' => 'lucas@theluxergroup.com' }
-  s.source           = { :git => 'https://bitbucket.org/luxer-one-team/public-lal-ios-sdk', :tag => s.version } 
+  s.source           = { :git => 'https://github.com/Harbor-Lockers/harbor-ios-sdk.git', :tag => s.version } 
 
   s.ios.deployment_target = '12.0'
-  s.vendored_frameworks = "AnywhereLockerSDK.xcframework"
+  s.ios.vendored_frameworks = 'HarborLockersSDK.xcframework'
   
 end
