@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AnywhereLockerSDK'
+  s.name             = 'HarborLockersSDK'
   s.version          = '1.0.1'
-  s.summary          = 'SDK To access Luxer Anywhere Lockers.'
+  s.summary          = 'SDK To access Harbor Lockers.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-The Luxer Anywhere Locker SDK allows you to communicate and connect to our distributed network of towers. The SDK encapsulates all the logic to communicate with our infrastructure (Web API and BLE Interface), allowing you to request sessions and tokens to connect to a tower and control the doors. Use the SDK to:
+The Harbor Lockers SDK allows you to communicate and connect to our distributed network of towers. The SDK encapsulates all the logic to communicate with our infrastructure (Web API and BLE Interface), allowing you to request sessions and tokens to connect to a tower and control the doors. Use the SDK to:
 • Search for nearby towers
 • Connect to a tower and request a session token
 • Request a packet to open a locker
