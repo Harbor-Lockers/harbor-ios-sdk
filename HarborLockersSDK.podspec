@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HarborLockersSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'SDK To access Harbor Lockers.'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,6 @@ The Harbor Lockers SDK allows you to communicate and connect to our distributed 
   s.source           = { :git => 'https://github.com/Harbor-Lockers/harbor-ios-sdk.git', :tag => s.version } 
 
   s.ios.deployment_target = '12.0'
-  s.ios.vendored_frameworks = 'HarborLockersSDK.xcframework'
+  s.vendored_frameworks = 'HarborLockersSDK.xcframework'
   
 end
