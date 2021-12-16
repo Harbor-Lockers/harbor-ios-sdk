@@ -15,6 +15,7 @@ import Swift
 import UIKit
 import _Concurrency
 @_hasMissingDesignatedInitializers @objc public class Tower : ObjectiveC.NSObject {
+  @objc final public let firmwareVersion: Swift.String!
   @objc final public let towerId: Foundation.Data!
   @objc final public let towerName: Swift.String!
   @objc public func peripheralUUID() -> Swift.String

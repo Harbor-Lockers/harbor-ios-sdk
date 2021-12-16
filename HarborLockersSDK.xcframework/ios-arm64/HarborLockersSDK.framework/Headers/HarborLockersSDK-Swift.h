@@ -910,6 +910,7 @@ typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
 
 SWIFT_CLASS("_TtC16HarborLockersSDK5Tower")
 @interface Tower : NSObject
+@property (nonatomic, readonly, copy) NSString * _Null_unspecified firmwareVersion;
 @property (nonatomic, readonly, copy) NSData * _Null_unspecified towerId;
 @property (nonatomic, readonly, copy) NSString * _Null_unspecified towerName;
 - (NSString * _Nonnull)peripheralUUID SWIFT_WARN_UNUSED_RESULT;
