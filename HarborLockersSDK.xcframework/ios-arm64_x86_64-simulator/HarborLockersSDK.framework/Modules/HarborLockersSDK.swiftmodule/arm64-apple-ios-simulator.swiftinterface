@@ -11,6 +11,7 @@ import CoreGraphics
 import Dispatch
 import Foundation
 @_exported import HarborLockersSDK
+import JustLog
 import Swift
 import UIKit
 import _Concurrency

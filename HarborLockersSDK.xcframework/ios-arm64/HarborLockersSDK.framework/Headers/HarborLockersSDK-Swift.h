@@ -349,12 +349,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HarborSDK * 
 @end
 
 
-
 @interface HarborSDK (SWIFT_EXTENSION(HarborLockersSDK))
 - (void)dfuProgressDidChangeFor:(NSInteger)part outOf:(NSInteger)totalParts to:(NSInteger)progress currentSpeedBytesPerSecond:(double)currentSpeedBytesPerSecond avgSpeedBytesPerSecond:(double)avgSpeedBytesPerSecond;
 - (void)dfuStateDidChangeTo:(enum DFUState)state;
 - (void)dfuError:(enum DFUError)error didOccurWithMessage:(NSString * _Nonnull)message;
 @end
+
 
 @class NSData;
 enum SessionPermission : NSInteger;
