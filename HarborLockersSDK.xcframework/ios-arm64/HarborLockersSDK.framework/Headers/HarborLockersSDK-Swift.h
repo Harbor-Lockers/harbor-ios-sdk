@@ -911,8 +911,8 @@ typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
 SWIFT_CLASS("_TtC16HarborLockersSDK5Tower")
 @interface Tower : NSObject
 @property (nonatomic, readonly, copy) NSString * _Null_unspecified firmwareVersion;
-@property (nonatomic, readonly, copy) NSData * _Null_unspecified towerId;
-@property (nonatomic, readonly, copy) NSString * _Null_unspecified towerName;
+@property (nonatomic, copy) NSData * _Null_unspecified towerId;
+@property (nonatomic, copy) NSString * _Null_unspecified towerName;
 - (NSString * _Nonnull)peripheralUUID SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

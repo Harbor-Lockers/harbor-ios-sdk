@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/HarborLockersSDK-Swift.h</key>
 		<data>
-		PM3Oh2WIDUwbL4jcFnC8A4OAo7w=
+		w4oTmkAjLo8D7mUqSWyMOnNMn9M=
 		</data>
 		<key>Headers/HarborLockersSDK.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NAw5sehHsOSSNdkYf3JIhqEuHAw=
+		MHwFHOUeaZDEuAxTWKvG0ZTqv6o=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rZu3jTUmv27YifsWpGc702hWn3c=
+		3ayaPTIg53HHspMyiZhILT3x7h8=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		NAw5sehHsOSSNdkYf3JIhqEuHAw=
+		MHwFHOUeaZDEuAxTWKvG0ZTqv6o=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		rZu3jTUmv27YifsWpGc702hWn3c=
+		3ayaPTIg53HHspMyiZhILT3x7h8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ull1Vo7i24QEWHXZHMQElOMuOjGYNU+4yFAlZSPwHQY=
+			fuZNLUpqjlfixpUjE2fpbv9pCO2i4iFKhgnOMRqXCFU=
 			</data>
 		</dict>
 		<key>Headers/HarborLockersSDK.h</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nctr3g3+PWthxF7tqDJSO0ChkxjhAQql9AT15Kr+rig=
+			mgBcyRkMJchoBwvr8PPmbQgZ/Gbv28nX12xnLFt7hRI=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u9R2YmDaV4EE3EUG4rrBDArzi262z6VW0t6wC/ZWc/Q=
+			0CgGCIN+AoKlIbD4MaFEHMeARrsvond8sWbzGPiuOHk=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nctr3g3+PWthxF7tqDJSO0ChkxjhAQql9AT15Kr+rig=
+			mgBcyRkMJchoBwvr8PPmbQgZ/Gbv28nX12xnLFt7hRI=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u9R2YmDaV4EE3EUG4rrBDArzi262z6VW0t6wC/ZWc/Q=
+			0CgGCIN+AoKlIbD4MaFEHMeARrsvond8sWbzGPiuOHk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
