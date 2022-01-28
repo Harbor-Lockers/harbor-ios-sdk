@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/HarborLockersSDK-Swift.h</key>
 		<data>
-		w4oTmkAjLo8D7mUqSWyMOnNMn9M=
+		gIBkUIZUEY7Lln1F/WFlCEBLfdg=
 		</data>
 		<key>Headers/HarborLockersSDK.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MHwFHOUeaZDEuAxTWKvG0ZTqv6o=
+		8OaiVygSAD2GO0A8NVOql80hHtg=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		d1V6xl2gMAO0gFJWbNVKCUUEMPA=
+		ADdBxNvlaMjidRTlSGKfGZOKENc=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		MHwFHOUeaZDEuAxTWKvG0ZTqv6o=
+		8OaiVygSAD2GO0A8NVOql80hHtg=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		d1V6xl2gMAO0gFJWbNVKCUUEMPA=
+		ADdBxNvlaMjidRTlSGKfGZOKENc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fuZNLUpqjlfixpUjE2fpbv9pCO2i4iFKhgnOMRqXCFU=
+			R8Kgs/uPw1ZKpTR0k1J/YNaId++0/IOn2ornF3X8E/Q=
 			</data>
 		</dict>
 		<key>Headers/HarborLockersSDK.h</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mgBcyRkMJchoBwvr8PPmbQgZ/Gbv28nX12xnLFt7hRI=
+			D4ORNFC63j5cmpWWsTWFvwcFruLipRIS0nKIsGtjW64=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6drmacz4G70XTppA7yBuhqXBA3fzPefEAJMJkVb7XB4=
+			iTZYaLy/JmivjViuqJQsT6+4imANvnZx/Zq+AmYWJ2M=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mgBcyRkMJchoBwvr8PPmbQgZ/Gbv28nX12xnLFt7hRI=
+			D4ORNFC63j5cmpWWsTWFvwcFruLipRIS0nKIsGtjW64=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6drmacz4G70XTppA7yBuhqXBA3fzPefEAJMJkVb7XB4=
+			iTZYaLy/JmivjViuqJQsT6+4imANvnZx/Zq+AmYWJ2M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

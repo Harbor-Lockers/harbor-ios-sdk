@@ -811,6 +811,7 @@ public typealias CommandSentResponseHandler = (_ success: Swift.Bool, _ error: F
   @objc public static let shared: HarborLockersSDK.HarborSDK
   @objc public var delegate: HarborLockersSDK.HarborSDKDelegate!
   @objc public var outputConsole: HarborLockersSDK.HarborSDKConsole?
+  @objc public func isSyncing() -> Swift.Bool
   @objc public func setBaseURL(_ baseURL: Swift.String)
   @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping HarborLockersSDK.APIResponseWithStatusCode)
   @objc public func setAccessToken(_ token: Swift.String)

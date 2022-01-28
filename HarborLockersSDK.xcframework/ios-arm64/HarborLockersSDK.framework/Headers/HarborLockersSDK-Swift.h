@@ -327,8 +327,8 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 @protocol HarborSDKDelegate;
 @protocol HarborSDKConsole;
-@class NSString;
 @class NSNumber;
+@class NSString;
 @class NSError;
 @class Tower;
 
@@ -338,6 +338,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HarborSDK * 
 + (HarborSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) id <HarborSDKDelegate> _Null_unspecified delegate;
 @property (nonatomic, strong) id <HarborSDKConsole> _Nullable outputConsole;
+- (BOOL)isSyncing SWIFT_WARN_UNUSED_RESULT;
 - (void)setBaseURL:(NSString * _Nonnull)baseURL;
 - (void)loginWithEmail:(NSString * _Nonnull)email password:(NSString * _Nonnull)password completion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 - (void)setAccessToken:(NSString * _Nonnull)token;
