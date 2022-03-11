@@ -323,6 +323,7 @@ typedef SWIFT_ENUM(NSInteger, DFUState, open) {
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDevelopment = 0,
+  EnvironmentSandbox = 2,
   EnvironmentProduction = 3,
 };
 
@@ -1251,6 +1252,7 @@ typedef SWIFT_ENUM(NSInteger, DFUState, open) {
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDevelopment = 0,
+  EnvironmentSandbox = 2,
   EnvironmentProduction = 3,
 };
 

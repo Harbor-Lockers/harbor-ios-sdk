@@ -1004,6 +1004,7 @@ public typealias RequestTowerSessionAPIResponse = (_ payload: Foundation.Data?, 
 public typealias RequestTowerConfigurationAPIResponse = (_ towerId: Foundation.Data?, _ commands: [Foundation.Data]?, _ error: Foundation.NSError?) -> Swift.Void
 @objc public enum Environment : Swift.Int {
   case Development = 0
+  case Sandbox = 2
   case Production = 3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
