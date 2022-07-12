@@ -11,7 +11,6 @@ import CoreGraphics
 import Dispatch
 import Foundation
 @_exported import HarborLockersSDK
-import JustLog
 import Swift
 import UIKit
 import _Concurrency
@@ -809,6 +808,20 @@ public typealias CommandSentResponseHandler = (_ success: Swift.Bool, _ error: F
   @objc deinit
 }
 extension HarborLockersSDK.HarborSDK {
+  public enum LogType : Swift.String {
+    case debug
+    case warning
+    case verbose
+    case error
+    case info
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension HarborLockersSDK.HarborSDK {
   @objc dynamic public func establishSession(towerId: Foundation.Data?, duration: Swift.Int = 600, sessionPermissions: HarborLockersSDK.SessionPermission, completionHandler: @escaping HarborLockersSDK.CommandSentResponseHandler)
   @objc dynamic public func getSessionRequest(towerId: Foundation.Data?, duration: Swift.Int = 3600, sessionPermissions: HarborLockersSDK.SessionPermission, completionHandler: @escaping HarborLockersSDK.RequestTowerSessionAPIResponse)
   @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, sessionSeed: Foundation.Data, completionHandler: @escaping HarborLockersSDK.CommandSentResponseHandler)
@@ -1134,6 +1147,9 @@ extension HarborLockersSDK.SessionPermission : Swift.RawRepresentable {}
 extension HarborLockersSDK.Half : Swift.Sendable {}
 extension HarborLockersSDK.CBOREncoder.DateEncodingStrategy : Swift.Equatable {}
 extension HarborLockersSDK.CBOREncoder.DateEncodingStrategy : Swift.Hashable {}
+extension HarborLockersSDK.HarborSDK.LogType : Swift.Equatable {}
+extension HarborLockersSDK.HarborSDK.LogType : Swift.Hashable {}
+extension HarborLockersSDK.HarborSDK.LogType : Swift.RawRepresentable {}
 extension HarborLockersSDK.DFUError : Swift.Equatable {}
 extension HarborLockersSDK.DFUError : Swift.Hashable {}
 extension HarborLockersSDK.DFUError : Swift.RawRepresentable {}
