@@ -372,6 +372,7 @@ enum SessionPermission : NSInteger;
 @class NSURL;
 
 @interface HarborSDK (SWIFT_EXTENSION(HarborLockersSDK))
+- (void)syncWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// Establishes a session with a tower. This is a convenience method that can be used if you don’t want to store the Request session payload, payload auth and session seed to send it later. The SDK must be initialized with the provider credentials as the Harbor API will verify it can provide a session with the requested permissions.
 /// \param towerId The ID of the tower you want to connect to. If none is provided, it’ll request a session to the connected tower.
 ///
@@ -1307,6 +1308,7 @@ enum SessionPermission : NSInteger;
 @class NSURL;
 
 @interface HarborSDK (SWIFT_EXTENSION(HarborLockersSDK))
+- (void)syncWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// Establishes a session with a tower. This is a convenience method that can be used if you don’t want to store the Request session payload, payload auth and session seed to send it later. The SDK must be initialized with the provider credentials as the Harbor API will verify it can provide a session with the requested permissions.
 /// \param towerId The ID of the tower you want to connect to. If none is provided, it’ll request a session to the connected tower.
 ///

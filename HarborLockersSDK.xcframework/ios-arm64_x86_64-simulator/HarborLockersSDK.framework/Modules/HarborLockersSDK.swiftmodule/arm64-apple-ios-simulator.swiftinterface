@@ -99,6 +99,7 @@ extension HarborLockersSDK.CBOR.IndefiniteLengthString : Swift.Equatable {
 public typealias BLEConnectionResult = (_ result: Swift.String?, _ error: Swift.Error?) -> Swift.Void
 public typealias BLEResponseHandler = (_ responseData: Foundation.Data?, _ error: Swift.Error?) -> Swift.Void
 public typealias BLETowersDiscoveredHandler = (_ peripherals: [HarborLockersSDK.Tower]) -> Swift.Void
+public typealias SyncCompletionHandler = (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
 public struct CBOR {
   public struct Undefined {
   }
@@ -822,6 +823,7 @@ extension HarborLockersSDK.HarborSDK {
   }
 }
 extension HarborLockersSDK.HarborSDK {
+  @objc dynamic public func sync(completionHandler: @escaping HarborLockersSDK.SyncCompletionHandler)
   @objc dynamic public func establishSession(towerId: Foundation.Data?, duration: Swift.Int = 600, sessionPermissions: HarborLockersSDK.SessionPermission, completionHandler: @escaping HarborLockersSDK.CommandSentResponseHandler)
   @objc dynamic public func getSessionRequest(towerId: Foundation.Data?, duration: Swift.Int = 3600, sessionPermissions: HarborLockersSDK.SessionPermission, completionHandler: @escaping HarborLockersSDK.RequestTowerSessionAPIResponse)
   @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, sessionSeed: Foundation.Data, completionHandler: @escaping HarborLockersSDK.CommandSentResponseHandler)
