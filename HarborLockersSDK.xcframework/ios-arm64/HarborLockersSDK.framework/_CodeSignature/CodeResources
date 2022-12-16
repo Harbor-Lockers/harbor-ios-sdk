@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/HarborLockersSDK-Swift.h</key>
 		<data>
-		C4BHo6uSDDyWFu4aNilPh8GvYXk=
+		vE8E3h17pwBgnRh+kCPvJ8InClQ=
 		</data>
 		<key>Headers/HarborLockersSDK.h</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pxAq4HV/4ENDx2Rv57BStK8IHkw=
+		4ZFQN+6u+NWYvKJRpL3M//edR5c=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		fLF/9T5hDxXOF6d1sDICGuF6RYo=
+		hMpwqYBoUpaJS/2xwsLxzn3XHds=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XsVufn/DbR97qIUzIr74DRv6AMY=
+		dk/8Fs09HFTOWnIBbqhbfUVyi8s=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QDLk3bmGjF5Rwb+6X904Pc6qc4s=
+		7pHax80cgL6EkZSeT53GieUBU6Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3TCbmxsvCY0j/jQWklNIzwhp8t2IiSjLqDLiLPLgZzs=
+			9uC/eo2F1QfXA7ncWf+mMAC9JyOCyN8t5MdOLK/21dM=
 			</data>
 		</dict>
 		<key>Headers/HarborLockersSDK.h</key>
@@ -79,21 +79,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fysZBaip0mag8yyz3lOvNIL9MWSCd3o0H/+RDxZhBVU=
+			GkVsNPXQ6PDhqq670WpMQW5tqKB9sdfYZZSDwkxb/YY=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/BrfInF3XPmHYWw8smuabr44wIT20TaMwXDkDeTRTJE=
+			//oEfqqE0klE5KW27W5LZ8ujhLHwHQVuwIpOUXULU6E=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MYktGa0BVJ57UyvRhmUv/6DzFFZ/Mqml+zvcHbiUjhg=
+			Qj6pGEYgnVVZHfc8BKGAUwYRRykvYMZgA7aZ7EaqNiA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

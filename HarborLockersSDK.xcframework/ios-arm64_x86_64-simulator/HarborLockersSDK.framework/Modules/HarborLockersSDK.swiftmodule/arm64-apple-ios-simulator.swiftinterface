@@ -1,14 +1,11 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name HarborLockersSDK
+// swift-module-flags: -target arm64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name HarborLockersSDK
 import CoreGraphics.CGBase
 import Combine
 import CommonCrypto
-import Compression
 import CoreBluetooth
-import CoreFoundation
 import CoreGraphics
-import Dispatch
 import Foundation
 @_exported import HarborLockersSDK
 import Swift
@@ -100,6 +97,24 @@ public typealias BLEConnectionResult = (_ result: Swift.String?, _ error: Swift.
 public typealias BLEResponseHandler = (_ responseData: Foundation.Data?, _ error: Swift.Error?) -> Swift.Void
 public typealias BLETowersDiscoveredHandler = (_ peripherals: [HarborLockersSDK.Tower]) -> Swift.Void
 public typealias SyncCompletionHandler = (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
+@objc public enum HarborLogLevel : Swift.Int {
+  case debug = 0
+  case verbose = 1
+  case info = 5
+  case warning = 15
+  case error = 20
+  public func name() -> Swift.String
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class HarborLogLevelName : ObjectiveC.NSObject {
+  @objc public class func withLevel(_ logLevel: HarborLockersSDK.HarborLogLevel) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 public struct CBOR {
   public struct Undefined {
   }
@@ -787,40 +802,24 @@ extension HarborLockersSDK.CBOREncoder : Combine.TopLevelEncoder {
   public typealias Output = Foundation.Data
 }
 public typealias CommandSentResponseHandler = (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
-@objc public protocol HarborSDKConsole {
-  @objc func printToConsole(_ string: Swift.String)
-}
 @objc public protocol HarborSDKDelegate {
   @objc func harborDidDiscoverTowers(_ towers: [HarborLockersSDK.Tower])
 }
-@_inheritsConvenienceInitializers @objc public class HarborSDK : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HarborSDK : ObjectiveC.NSObject {
   @objc public static let shared: HarborLockersSDK.HarborSDK
   @objc public var delegate: HarborLockersSDK.HarborSDKDelegate!
-  @objc public var outputConsole: HarborLockersSDK.HarborSDKConsole?
+  @objc public var loggerDelegate: HarborLockersSDK.HarborLoggerDelegate?
+  @objc public var logLevel: HarborLockersSDK.HarborLogLevel
   @objc public func isSyncing() -> Swift.Bool
   @objc public func setBaseURL(_ baseURL: Swift.String)
   @objc public func loginWithEmail(_ email: Swift.String, password: Swift.String, completion: @escaping HarborLockersSDK.APIResponseWithStatusCode)
   @objc public func setAccessToken(_ token: Swift.String)
+  @objc public func setupLogger(delegate: HarborLockersSDK.HarborLoggerDelegate, level: HarborLockersSDK.HarborLogLevel = .info)
   @objc public func setEnvironment(_ environment: HarborLockersSDK.Environment)
   @objc public func downloadTowerConfiguration(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
-  @objc public func startTowerDiscovery(outputConsole: HarborLockersSDK.HarborSDKConsole?)
+  @objc public func startTowerDiscovery()
   @objc public func connectToTower(_ tower: HarborLockersSDK.Tower, completion: @escaping HarborLockersSDK.BLEConnectionResult)
-  @objc override dynamic public init()
   @objc deinit
-}
-extension HarborLockersSDK.HarborSDK {
-  public enum LogType : Swift.String {
-    case debug
-    case warning
-    case verbose
-    case error
-    case info
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
 }
 extension HarborLockersSDK.HarborSDK {
   @objc dynamic public func sync(completionHandler: @escaping HarborLockersSDK.SyncCompletionHandler)
@@ -828,9 +827,6 @@ extension HarborLockersSDK.HarborSDK {
   @objc dynamic public func getSessionRequest(towerId: Foundation.Data?, duration: Swift.Int = 3600, sessionPermissions: HarborLockersSDK.SessionPermission, completionHandler: @escaping HarborLockersSDK.RequestTowerSessionAPIResponse)
   @objc dynamic public func sendRequestSession(payloadAuth: Foundation.Data, payload: Foundation.Data, sessionSeed: Foundation.Data, completionHandler: @escaping HarborLockersSDK.CommandSentResponseHandler)
   @objc dynamic public func sendTerminateSession(errorCode: Swift.Int, errorMessage: Swift.String?, disconnectAfterSessionTerminated: Swift.Bool = true, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendInstallKey(keyId: Swift.Int, keyRotation: Swift.Int, keyExpires: Foundation.Date, keyData: Foundation.Data, keyLocator: Swift.String, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSunsetKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendRevokeKey(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
   #warning("We might want to remove some of the sync events from the public interface as sync must be handled entirely by the SDK.")
   @objc dynamic public func sendRequestSyncStatus(completionHandler: @escaping (_ syncEventStart: Swift.Int, _ syncEventCount: Swift.Int, _ syncCommandStart: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void)
   @objc dynamic public func sendSyncPull(syncEventStart: Swift.UInt32, completionHandler: @escaping (_ firstEventId: Swift.Int, _ syncEventCount: Swift.Int, _ payload: Foundation.Data, _ payloadAuth: Foundation.Data, _ error: Foundation.NSError?) -> Swift.Void)
@@ -849,114 +845,6 @@ extension HarborLockersSDK.HarborSDK {
   @objc dynamic public func sendSetKeypadCode(keypadCode: Swift.String, keypadCodePersists: Swift.Bool, keypadNextToken: Foundation.Data, keypadNextAvailable: Swift.Bool, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendTapLocker(lockerTapIntervalMS: Swift.Int, lockerTapCount: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
   @objc dynamic public func sendCheckAllLockerDoors(completionHandler: @escaping (_ lockerDoorsOpen: Foundation.Data?, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendGetDeviceInfo(completionHandler: @escaping (_ towerId: Foundation.Data, _ towerName: Swift.String, _ deviceModel: Swift.String, _ deviceSerial: Swift.String, _ towerSerial: Swift.String, _ firmwareVersion: Swift.String, _ mainboardId: Swift.Int, _ shield1Id: Swift.Int, _ shield2Id: Swift.Int, _ solenoidDelay: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendGetKeyInfo(keyId: Swift.Int, keyRotation: Swift.Int, completionHandler: @escaping (_ keyValid: Swift.Bool, _ keySunset: Swift.Bool, _ keyExpires: Swift.Int, _ keyLocator: Swift.String, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendGetLockerInfo(lockerId: Swift.Int, completionHandler: @escaping (_ lockerId: Swift.Int, _ lockerPhysicalId: Swift.Int, _ lockerTypeId: Swift.Int, _ lockerAvailable: Swift.Bool, _ lockerToken: Foundation.Data, _ lockerDisabled: Swift.Bool, _ keypadCode: Swift.String, _ keypadNextToken: Foundation.Data, _ keypadNextAvailable: Swift.Bool, _ keypadCodePersists: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendReadDeviceStatus(completionHandler: @escaping (_ temperature: Swift.Int, _ clockTime: Swift.Int, _ batteryCharge: Swift.Int, _ towerDisabled: Swift.Bool, _ towerReason: Swift.String, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendFireLock(lockerPhysicalId: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendControlLight(lockerPhysicalId: Swift.Int, lockerLightOn: Swift.Bool, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendReadPortStatus(lockerPhysicalId: Swift.Int, completionHandler: @escaping (_ lockerLightOn: Swift.Bool, _ lockerLockFiring: Swift.Bool, _ lockerDoorOpen: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendSoundBuzzer(buzzerSound: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetClock(timestamp: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetSolenoidDelay(solenoidDelay: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendReadKeypad(completionHandler: @escaping (_ keysHeld: Swift.Int, _ keysPressed: Swift.Int, _ keysReleased: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendSetLockerToken(lockerId: Swift.Int, lockerToken: Foundation.Data, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetLockerAvailable(lockerId: Swift.Int, lockerAvailable: Swift.Bool, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetLockerKeypad(lockerId: Swift.Int, keypadCode: Swift.String, keypadCodePersists: Swift.Bool, keypadNextToken: Foundation.Data, keypadNextAvailable: Swift.Bool, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetLockerDisabled(lockerId: Swift.Int, lockerDisabled: Swift.Bool, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendReadCounter(counterId: Swift.Int, completionHandler: @escaping (_ counterId: Swift.Int, _ counterValue: Swift.Int, _ counterLastReset: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void)
-  @objc dynamic public func sendResetCounter(counterId: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerId(towerId: Foundation.Data, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerSerial(towerSerial: Swift.String, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerName(towerName: Swift.String, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendSetTowerDisabled(towerDisabled: Swift.Bool, towerReason: Swift.String, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendResetBatteryGauge(completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendConfigureLocker(lockerId: Swift.Int, lockerPhysicalId: Swift.Int, lockerTypeId: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendAdjustClock(adjustClock: Swift.Int, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendRebootDevice(completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendBeginFirmwareUpdate(clearAllState: Swift.Bool, fileURL: Foundation.URL, completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-  @objc dynamic public func sendFactoryReset(completionHandler: HarborLockersSDK.CommandSentResponseHandler?)
-}
-extension HarborLockersSDK.HarborSDK {
-  @objc dynamic public func dfuProgressDidChange(for part: Swift.Int, outOf totalParts: Swift.Int, to progress: Swift.Int, currentSpeedBytesPerSecond: Swift.Double, avgSpeedBytesPerSecond: Swift.Double)
-  @objc dynamic public func dfuStateDidChange(to state: HarborLockersSDK.DFUState)
-  @objc dynamic public func dfuError(_ error: HarborLockersSDK.DFUError, didOccurWithMessage message: Swift.String)
-}
-@objc public enum DFUError : Swift.Int {
-  case remoteLegacyDFUSuccess = 1
-  case remoteLegacyDFUInvalidState = 2
-  case remoteLegacyDFUNotSupported = 3
-  case remoteLegacyDFUDataExceedsLimit = 4
-  case remoteLegacyDFUCrcError = 5
-  case remoteLegacyDFUOperationFailed = 6
-  case remoteSecureDFUSuccess = 11
-  case remoteSecureDFUOpCodeNotSupported = 12
-  case remoteSecureDFUInvalidParameter = 13
-  case remoteSecureDFUInsufficientResources = 14
-  case remoteSecureDFUInvalidObject = 15
-  case remoteSecureDFUSignatureMismatch = 16
-  case remoteSecureDFUUnsupportedType = 17
-  case remoteSecureDFUOperationNotPermitted = 18
-  case remoteSecureDFUOperationFailed = 20
-  case remoteSecureDFUExtendedError = 21
-  case remoteExtendedErrorWrongCommandFormat = 22
-  case remoteExtendedErrorUnknownCommand = 23
-  case remoteExtendedErrorInitCommandInvalid = 24
-  case remoteExtendedErrorFwVersionFailure = 25
-  case remoteExtendedErrorHwVersionFailure = 26
-  case remoteExtendedErrorSdVersionFailure = 27
-  case remoteExtendedErrorSignatureMissing = 28
-  case remoteExtendedErrorWrongHashType = 29
-  case remoteExtendedErrorHashFailed = 30
-  case remoteExtendedErrorWrongSignatureType = 31
-  case remoteExtendedErrorVerificationFailed = 32
-  case remoteExtendedErrorInsufficientSpace = 33
-  case remoteExperimentalButtonlessDFUSuccess = 9001
-  case remoteExperimentalButtonlessDFUOpCodeNotSupported = 9002
-  case remoteExperimentalButtonlessDFUOperationFailed = 9004
-  case remoteButtonlessDFUSuccess = 91
-  case remoteButtonlessDFUOpCodeNotSupported = 92
-  case remoteButtonlessDFUOperationFailed = 94
-  case remoteButtonlessDFUInvalidAdvertisementName = 95
-  case remoteButtonlessDFUBusy = 96
-  case remoteButtonlessDFUNotBonded = 97
-  case fileNotSpecified = 101
-  case fileInvalid = 102
-  case extendedInitPacketRequired = 103
-  case initPacketRequired = 104
-  case failedToConnect = 201
-  case deviceDisconnected = 202
-  case bluetoothDisabled = 203
-  case serviceDiscoveryFailed = 301
-  case deviceNotSupported = 302
-  case readingVersionFailed = 303
-  case enablingControlPointFailed = 304
-  case writingCharacteristicFailed = 305
-  case receivingNotificationFailed = 306
-  case unsupportedResponse = 307
-  case bytesLost = 308
-  case crcError = 309
-  case invalidInternalState = 500
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum DFUState : Swift.Int {
-  case connecting
-  case starting
-  case enablingDfuMode
-  case uploading
-  case validating
-  case disconnecting
-  case completed
-  case aborted
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -1012,6 +900,12 @@ public typealias RequestTowerConfigurationAPIResponse = (_ towerId: Foundation.D
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc public protocol HarborLoggerDelegate {
+  @objc func harborDidLog(message: Swift.String, logType: HarborLockersSDK.HarborLogLevel, context: [Swift.String : Any]?)
+}
+@_hasMissingDesignatedInitializers public class HarborLogger {
+  @objc deinit
 }
 extension HarborLockersSDK.CBOR.Undefined : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
@@ -1143,21 +1037,15 @@ extension HarborLockersSDK.Half : Swift.Codable {
         try container.encode(Float(self))
     }
 }
+extension HarborLockersSDK.HarborLogLevel : Swift.Equatable {}
+extension HarborLockersSDK.HarborLogLevel : Swift.Hashable {}
+extension HarborLockersSDK.HarborLogLevel : Swift.RawRepresentable {}
 extension HarborLockersSDK.SessionPermission : Swift.Equatable {}
 extension HarborLockersSDK.SessionPermission : Swift.Hashable {}
 extension HarborLockersSDK.SessionPermission : Swift.RawRepresentable {}
 extension HarborLockersSDK.Half : Swift.Sendable {}
 extension HarborLockersSDK.CBOREncoder.DateEncodingStrategy : Swift.Equatable {}
 extension HarborLockersSDK.CBOREncoder.DateEncodingStrategy : Swift.Hashable {}
-extension HarborLockersSDK.HarborSDK.LogType : Swift.Equatable {}
-extension HarborLockersSDK.HarborSDK.LogType : Swift.Hashable {}
-extension HarborLockersSDK.HarborSDK.LogType : Swift.RawRepresentable {}
-extension HarborLockersSDK.DFUError : Swift.Equatable {}
-extension HarborLockersSDK.DFUError : Swift.Hashable {}
-extension HarborLockersSDK.DFUError : Swift.RawRepresentable {}
-extension HarborLockersSDK.DFUState : Swift.Equatable {}
-extension HarborLockersSDK.DFUState : Swift.Hashable {}
-extension HarborLockersSDK.DFUState : Swift.RawRepresentable {}
 extension HarborLockersSDK.Environment : Swift.Equatable {}
 extension HarborLockersSDK.Environment : Swift.Hashable {}
 extension HarborLockersSDK.Environment : Swift.RawRepresentable {}
