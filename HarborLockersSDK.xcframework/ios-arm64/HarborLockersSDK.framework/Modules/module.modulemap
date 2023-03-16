@@ -6,6 +6,6 @@ framework module HarborLockersSDK {
 }
 
 module HarborLockersSDK.Swift {
-    header "HarborLockersSDK-Swift.h"
-    requires objc
+  header "HarborLockersSDK-Swift.h"
+  requires objc
 }
