@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "half.h"
 
 //! Project version number for HarborLockersSDK.
 FOUNDATION_EXPORT double HarborLockersSDKVersionNumber;
