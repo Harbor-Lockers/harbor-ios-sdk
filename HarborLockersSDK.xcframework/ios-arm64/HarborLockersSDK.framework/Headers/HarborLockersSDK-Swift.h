@@ -600,6 +600,7 @@ typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
 };
 
 @class NSNumber;
+enum TowerType : NSInteger;
 
 SWIFT_CLASS("_TtC16HarborLockersSDK5Tower")
 @interface Tower : NSObject
@@ -607,9 +608,23 @@ SWIFT_CLASS("_TtC16HarborLockersSDK5Tower")
 @property (nonatomic, copy) NSData * _Null_unspecified towerId;
 @property (nonatomic, copy) NSString * _Null_unspecified towerName;
 @property (nonatomic, strong) NSNumber * _Nonnull RSSI;
+@property (nonatomic) enum TowerType towerType;
 - (NSString * _Nonnull)peripheralUUID SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, TowerType, open) {
+  TowerTypeHarbor = 1,
+  TowerTypeBlinkServer = 2,
+  TowerTypeDFU = 3,
+};
+
+
+SWIFT_CLASS("_TtC16HarborLockersSDK15TowerTypeHelper")
+@interface TowerTypeHelper : NSObject
++ (NSString * _Nonnull)nameFor:(enum TowerType)towerType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

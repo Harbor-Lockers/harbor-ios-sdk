@@ -116,6 +116,383 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TowerType",
+        "printedName": "TowerType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "Harbor",
+            "printedName": "Harbor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(HarborLockersSDK.TowerType.Type) -> HarborLockersSDK.TowerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "HarborLockersSDK.TowerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TowerType",
+                        "printedName": "HarborLockersSDK.TowerType",
+                        "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@HarborLockersSDK@E@TowerType@TowerTypeHarbor",
+            "mangledName": "$s16HarborLockersSDK9TowerTypeO0A0yA2CmF",
+            "moduleName": "HarborLockersSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "BlinkServer",
+            "printedName": "BlinkServer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(HarborLockersSDK.TowerType.Type) -> HarborLockersSDK.TowerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "HarborLockersSDK.TowerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TowerType",
+                        "printedName": "HarborLockersSDK.TowerType",
+                        "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@HarborLockersSDK@E@TowerType@TowerTypeBlinkServer",
+            "mangledName": "$s16HarborLockersSDK9TowerTypeO11BlinkServeryA2CmF",
+            "moduleName": "HarborLockersSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "DFU",
+            "printedName": "DFU",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(HarborLockersSDK.TowerType.Type) -> HarborLockersSDK.TowerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "HarborLockersSDK.TowerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TowerType",
+                        "printedName": "HarborLockersSDK.TowerType",
+                        "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@HarborLockersSDK@E@TowerType@TowerTypeDFU",
+            "mangledName": "$s16HarborLockersSDK9TowerTypeO3DFUyA2CmF",
+            "moduleName": "HarborLockersSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "HarborLockersSDK.TowerType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16HarborLockersSDK9TowerTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16HarborLockersSDK9TowerTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "HarborLockersSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16HarborLockersSDK9TowerTypeO8rawValueSivp",
+            "mangledName": "$s16HarborLockersSDK9TowerTypeO8rawValueSivp",
+            "moduleName": "HarborLockersSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16HarborLockersSDK9TowerTypeO8rawValueSivg",
+                "mangledName": "$s16HarborLockersSDK9TowerTypeO8rawValueSivg",
+                "moduleName": "HarborLockersSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@HarborLockersSDK@E@TowerType",
+        "mangledName": "$s16HarborLockersSDK9TowerTypeO",
+        "moduleName": "HarborLockersSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TowerTypeHelper",
+        "printedName": "TowerTypeHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "name",
+            "printedName": "name(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TowerType",
+                "printedName": "HarborLockersSDK.TowerType",
+                "usr": "c:@M@HarborLockersSDK@E@TowerType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HarborLockersSDK@objc(cs)TowerTypeHelper(cm)nameFor:",
+            "mangledName": "$s16HarborLockersSDK15TowerTypeHelperC4name3forSSAA0dE0O_tFZ",
+            "moduleName": "HarborLockersSDK",
+            "static": true,
+            "objc_name": "nameFor:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TowerTypeHelper",
+                "printedName": "HarborLockersSDK.TowerTypeHelper",
+                "usr": "c:@M@HarborLockersSDK@objc(cs)TowerTypeHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@HarborLockersSDK@objc(cs)TowerTypeHelper(im)init",
+            "mangledName": "$s16HarborLockersSDK15TowerTypeHelperCACycfc",
+            "moduleName": "HarborLockersSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@HarborLockersSDK@objc(cs)TowerTypeHelper",
+        "mangledName": "$s16HarborLockersSDK15TowerTypeHelperC",
+        "moduleName": "HarborLockersSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1065,6 +1442,99 @@
                 "declKind": "Accessor",
                 "usr": "s:16HarborLockersSDK5TowerC4RSSISo8NSNumberCvM",
                 "mangledName": "$s16HarborLockersSDK5TowerC4RSSISo8NSNumberCvM",
+                "moduleName": "HarborLockersSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "towerType",
+            "printedName": "towerType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TowerType",
+                "printedName": "HarborLockersSDK.TowerType",
+                "usr": "c:@M@HarborLockersSDK@E@TowerType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HarborLockersSDK@objc(cs)Tower(py)towerType",
+            "mangledName": "$s16HarborLockersSDK5TowerC9towerTypeAA0dF0Ovp",
+            "moduleName": "HarborLockersSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HarborLockersSDK@objc(cs)Tower(im)towerType",
+                "mangledName": "$s16HarborLockersSDK5TowerC9towerTypeAA0dF0Ovg",
+                "moduleName": "HarborLockersSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TowerType",
+                    "printedName": "HarborLockersSDK.TowerType",
+                    "usr": "c:@M@HarborLockersSDK@E@TowerType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HarborLockersSDK@objc(cs)Tower(im)setTowerType:",
+                "mangledName": "$s16HarborLockersSDK5TowerC9towerTypeAA0dF0Ovs",
+                "moduleName": "HarborLockersSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16HarborLockersSDK5TowerC9towerTypeAA0dF0OvM",
+                "mangledName": "$s16HarborLockersSDK5TowerC9towerTypeAA0dF0OvM",
                 "moduleName": "HarborLockersSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6351,161 +6821,154 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2403,
+      "offset": 2487,
       "length": 59,
       "value": "\"Sending packet \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2433,
+      "offset": 2517,
       "length": 1,
       "value": "\", receiving Packet \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2545,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2915,
+      "offset": 2999,
       "length": 70,
       "value": "\"Sending packet with retry \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 3040,
       "length": 1,
       "value": "\", receiving Packet \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 2984,
+      "offset": 3068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3329,
-      "length": 25,
-      "value": "\"Discovering peripherals\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "Array",
-      "offset": 3386,
+      "offset": 3440,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 3559,
+      "offset": 3613,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 3697,
+      "offset": 3751,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 4080,
+      "offset": 4197,
       "length": 62,
       "value": "\"Error encoding packet to send: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 4141,
+      "offset": 4258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 4495,
+      "offset": 4612,
       "length": 79,
       "value": "\"Updating characteristic has failed with error: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 4573,
+      "offset": 4690,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 4952,
+      "offset": 5069,
       "length": 24,
       "value": "\"Received innerEnvelope\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 5175,
+      "offset": 5292,
       "length": 31,
       "value": "\"Received innerEnvelope packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 5407,
+      "offset": 5524,
       "length": 46,
       "value": "\"Received errorPacket \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 5452,
+      "offset": 5569,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 5908,
+      "offset": 6025,
       "length": 50,
       "value": "\"Received session error: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 5957,
+      "offset": 6074,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 6144,
+      "offset": 6261,
       "length": 16,
       "value": "\"Unknown packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 6513,
+      "offset": 6630,
       "length": 65,
       "value": "\"Session sequence updated from packet: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLEManager.swift",
       "kind": "StringLiteral",
-      "offset": 6577,
+      "offset": 6694,
       "length": 2,
       "value": "\"\""
     },
@@ -6596,462 +7059,420 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3474,
+      "offset": 3471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3512,
       "length": 25,
       "value": "\"Already Synced to Tower\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3566,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "Array",
-      "offset": 3637,
+      "offset": 3604,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3826,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3873,
+      "offset": 3790,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 3958,
+      "offset": 3883,
       "length": 19,
       "value": "\"Syncing completed\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 4195,
+      "offset": 4120,
       "length": 22,
       "value": "\"Downloading commands\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4353,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4394,
+      "offset": 4275,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 4445,
+      "offset": 4320,
       "length": 17,
       "value": "\"No tower ID set\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4677,
+      "offset": 4552,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4839,
+      "offset": 4714,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 5104,
+      "offset": 4979,
       "length": 123,
       "value": "\"Sync process failed with error: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 5184,
+      "offset": 5059,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 5200,
+      "offset": 5075,
       "length": 1,
       "value": "\". Sending events to Server\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5379,
+      "offset": 5254,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 5482,
+      "offset": 5357,
       "length": 33,
       "value": "\"Commands downloaded succesfully\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5990,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6037,
+      "offset": 5862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 6096,
+      "offset": 5913,
       "length": 57,
       "value": "\"Error when pulling events: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 6152,
+      "offset": 5969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6265,
+      "offset": 6082,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 6482,
+      "offset": 6299,
       "length": 80,
       "value": "\"Pulling events. Start \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 6522,
+      "offset": 6339,
       "length": 1,
       "value": "\", lastIdInDevice \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 6561,
+      "offset": 6378,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7037,
+      "offset": 6854,
       "length": 3,
       "value": "510"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7057,
+      "offset": 6874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7095,
+      "offset": 6912,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 7132,
+      "offset": 6949,
       "length": 100,
       "value": "\"Board was busy while syncing. Will retry in \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 7223,
+      "offset": 7040,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7269,
+      "offset": 7086,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 7682,
+      "offset": 7499,
       "length": 34,
       "value": "\"Error, no packet in the response\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 7762,
+      "offset": 7579,
       "length": 17,
       "value": "\"HarborSDK Error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7818,
+      "offset": 7635,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 7890,
+      "offset": 7707,
       "length": 28,
       "value": "\"Missing packet in response\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 8732,
+      "offset": 8549,
       "length": 24,
       "value": "\"Events pulled by batch\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "Array",
-      "offset": 9449,
+      "offset": 9266,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 9937,
+      "offset": 9754,
       "length": 35,
       "value": "\"Error sending evens to the server\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10014,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10077,
+      "offset": 9828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 10209,
+      "offset": 9984,
       "length": 28,
       "value": "\"All events pulled by batch\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10279,
+      "offset": 10051,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10323,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10576,
+      "offset": 10309,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 10791,
       "length": 20,
       "value": "\"No tower connected\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11103,
+      "offset": 10836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11178,
+      "offset": 10911,
       "length": 26,
       "value": "\"Sending events to server\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11345,
+      "offset": 11078,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11386,
+      "offset": 11119,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11691,
+      "offset": 11424,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11725,
+      "offset": 11458,
       "length": 20,
       "value": "\"Unknown sync error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11746,
+      "offset": 11479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11842,
+      "offset": 11575,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 11941,
+      "offset": 11674,
       "length": 20,
       "value": "\"Unknown sync error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12094,
+      "offset": 11827,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12128,
+      "offset": 11861,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12162,
+      "offset": 11895,
       "length": 17,
       "value": "\"HarborSDK Error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12428,
+      "offset": 12161,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12462,
+      "offset": 12195,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12496,
+      "offset": 12229,
       "length": 17,
       "value": "\"HarborSDK Error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12544,
+      "offset": 12277,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12723,
+      "offset": 12456,
       "length": 107,
       "value": "\"Sync process failed when pulling events: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "StringLiteral",
-      "offset": 12794,
+      "offset": 12527,
       "length": 1,
       "value": "\". Sending existing events to server\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12907,
+      "offset": 12637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Synchronization\/SyncManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12966,
+      "offset": 12870,
       "length": 5,
       "value": "false"
     },
@@ -7343,646 +7764,1010 @@
       "value": "10"
     },
     {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 674,
+      "length": 38,
+      "value": "\"6E400001-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 38,
+      "value": "\"6E400002-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 840,
+      "length": 38,
+      "value": "\"6E400003-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 38,
+      "value": "\"6E400004-B5A3-F393-E0A9-E50E24DCCA9E\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 6,
+      "value": "\"FE59\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1071,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1096,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1113,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1071,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1096,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1113,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1293,
+      "length": 8,
+      "value": "\"HARBOR\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 14,
+      "value": "\"BLINK_SERVER\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 5,
+      "value": "\"DFU\""
+    },
+    {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "Array",
-      "offset": 6198,
+      "offset": 6157,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6353,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "Dictionary",
+      "offset": 6411,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6513,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6573,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "Array",
+      "offset": 6735,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 6586,
+      "offset": 7123,
       "length": 24,
       "value": "\"hal-sdk-commands-queue\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "Array",
-      "offset": 6686,
+      "offset": 7223,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6742,
+      "offset": 7279,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6991,
+      "offset": 7528,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 7839,
+      "offset": 8375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 8906,
+      "offset": 9489,
       "length": 28,
       "value": "\"Connecting in Communicator\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 9351,
+      "offset": 9934,
       "length": 35,
       "value": "\"Peripherals: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9968,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 9740,
+      "offset": 10323,
       "length": 9,
       "value": "\"towerId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 9820,
+      "offset": 10403,
       "length": 17,
       "value": "\"firmwareVersion\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 9961,
+      "offset": 10650,
+      "length": 49,
+      "value": "\"Allow duplicate scan \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 10698,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 10821,
+      "length": 11,
+      "value": "\"Scanning \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11025,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 11204,
       "length": 31,
       "value": "\"Disconnecting all peripherals\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 10334,
+      "offset": 11613,
       "length": 9,
       "value": "\"towerId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 10384,
+      "offset": 11663,
       "length": 17,
       "value": "\"firmwareVersion\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 10442,
+      "offset": 11721,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10484,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11052,
+      "offset": 12290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11500,
+      "offset": 12738,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 12275,
+      "offset": 13159,
+      "length": 26,
+      "value": "\"Could not prepare packet\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 13671,
       "length": 45,
       "value": "\"The app is not connected to a Harbor Tower.\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12600,
+      "offset": 14087,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 12701,
+      "offset": 14188,
       "length": 22,
       "value": "\"Time out packet wait\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 13483,
-      "length": 38,
-      "value": "\"Error: \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 13520,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 13609,
-      "length": 28,
-      "value": "\"App is entering background\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14155,
-      "length": 28,
-      "value": "\"App is entering foreground\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 5838,
-      "length": 15,
-      "value": "\"HarborLockersSDK.BLECommunicator\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14572,
-      "length": 12,
-      "value": "\"Powered ON\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14768,
-      "length": 13,
-      "value": "\"Powered OFF\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14827,
-      "length": 11,
-      "value": "\"Resetting\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14887,
-      "length": 14,
-      "value": "\"Unauthorized\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 14949,
-      "length": 13,
-      "value": "\"Unsupported\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 15000,
-      "length": 9,
-      "value": "\"Unknown\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 15054,
-      "length": 58,
-      "value": "\"[Callback] Central Manager did update state to: \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 15111,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15542,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15574,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15578,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15607,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15611,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15643,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 15648,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16017,
-      "length": 115,
-      "value": "\"Manufacturer Data \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16125,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16131,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16246,
-      "length": 61,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16263,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16266,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16283,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16286,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16303,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16306,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 16968,
-      "length": 19,
-      "value": "\"Service UUIDs set\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17126,
-      "length": 48,
-      "value": "\"didConnect \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17173,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17381,
-      "length": 67,
-      "value": "\"peripheral.discoverServicesUsing([\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17445,
-      "length": 1,
-      "value": "\"])\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17708,
-      "length": 54,
-      "value": "\"[Callback] Central Manager did disconnect peripheral\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 17837,
-      "length": 67,
-      "value": "\"[Callback] Central Manager did disconnect peripheral successfully\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18224,
-      "length": 9,
-      "value": "\"towerId\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18274,
-      "length": 17,
-      "value": "\"firmwareVersion\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18332,
-      "length": 11,
-      "value": "\"sessionId\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18531,
-      "length": 62,
-      "value": "\"[Callback] Central Manager did fail to connect to peripheral\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18728,
-      "length": 77,
-      "value": "\"[Callback] Central Manager did fail to connect to peripheral without errors\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 18955,
-      "length": 9,
-      "value": "\"towerId\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 19005,
-      "length": 17,
-      "value": "\"firmwareVersion\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 19063,
-      "length": 11,
-      "value": "\"sessionId\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 20536,
-      "length": 26,
-      "value": "\"Service discovery failed\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 20703,
-      "length": 21,
-      "value": "\"Services discovered\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 20880,
-      "length": 20,
-      "value": "\"UART Service found\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 21210,
-      "length": 34,
-      "value": "\"Characteristics discovery failed\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 21376,
-      "length": 28,
-      "value": "\"Characteristics discovered\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 21644,
-      "length": 25,
-      "value": "\"TX Characteristic found\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 21840,
-      "length": 25,
-      "value": "\"RX Characteristic found\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 22111,
-      "length": 65,
-      "value": "\"Enabling notifications for \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
-      "kind": "StringLiteral",
-      "offset": 22175,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 22233,
+      "offset": 14804,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22296,
-      "length": 371,
-      "value": "\"Connected to Tower:\nTower ID: \""
+      "offset": 15472,
+      "length": 38,
+      "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22444,
+      "offset": 15509,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 15598,
+      "length": 28,
+      "value": "\"App is entering background\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 16144,
+      "length": 28,
+      "value": "\"App is entering foreground\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 6068,
+      "length": 15,
+      "value": "\"HarborLockersSDK.BLECommunicator\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 16561,
+      "length": 12,
+      "value": "\"Powered ON\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16662,
       "length": 5,
-      "value": "\"\nTower Name: \""
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16969,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22523,
-      "length": 8,
-      "value": "\"\nFirmware Version: \""
+      "offset": 17179,
+      "length": 13,
+      "value": "\"Powered OFF\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22616,
+      "offset": 17238,
+      "length": 11,
+      "value": "\"Resetting\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 17298,
+      "length": 14,
+      "value": "\"Unauthorized\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 17360,
+      "length": 13,
+      "value": "\"Unsupported\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 17411,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22626,
-      "length": 3126,
+      "offset": 17465,
+      "length": 58,
+      "value": "\"[Callback] Central Manager did update state to: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 17522,
+      "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22741,
+      "offset": 18130,
+      "length": 32,
+      "value": "\"Service UUIDs: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 18161,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 18474,
+      "length": 29,
+      "value": "\"Manufacturer Data Not Found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 19050,
+      "length": 55,
+      "value": "\"Peripheral already discovered, using the existing one\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 19433,
+      "length": 107,
+      "value": "\"Trying\n1) Connect with peripheral\n2) Get the info from the characteristic\n3) Disconect from peripheral\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19945,
+      "length": 2,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 19973,
+      "length": 38,
+      "value": "\"Manufacturer Data size \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20010,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20092,
+      "length": 25,
+      "value": "\"Manufacturer Data found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20152,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20156,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20189,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20193,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20229,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20234,
+      "length": 2,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20331,
+      "length": 61,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20348,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20351,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20368,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20371,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20388,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20391,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 20947,
+      "length": 28,
+      "value": "\"We CAN connect with device\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21002,
+      "length": 95,
+      "value": "\"Firmware: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21028,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21032,
+      "length": 1,
+      "value": "\" \nId: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21065,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21069,
+      "length": 1,
+      "value": "\" \nName:\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21092,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21096,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 21515,
+      "length": 23,
+      "value": "\"Peripheral discovered\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 22194,
+      "length": 48,
+      "value": "\"didConnect \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 22241,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 22600,
+      "length": 57,
+      "value": "\"peripheral.discoverServicesUsing([\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 22654,
+      "length": 1,
+      "value": "\"])\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 22940,
+      "length": 54,
+      "value": "\"[Callback] Central Manager did disconnect peripheral\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23069,
+      "length": 67,
+      "value": "\"[Callback] Central Manager did disconnect peripheral successfully\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23456,
+      "length": 9,
+      "value": "\"towerId\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23506,
+      "length": 17,
+      "value": "\"firmwareVersion\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23564,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23763,
+      "length": 62,
+      "value": "\"[Callback] Central Manager did fail to connect to peripheral\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 23960,
+      "length": 77,
+      "value": "\"[Callback] Central Manager did fail to connect to peripheral without errors\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 24187,
+      "length": 9,
+      "value": "\"towerId\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 24237,
+      "length": 17,
+      "value": "\"firmwareVersion\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 24295,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 25768,
+      "length": 26,
+      "value": "\"Service discovery failed\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 25935,
+      "length": 21,
+      "value": "\"Services discovered\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26054,
+      "length": 25,
+      "value": "\"Service \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26078,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26134,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26173,
+      "length": 20,
+      "value": "\"UART Service found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26503,
+      "length": 34,
+      "value": "\"Characteristics discovery failed\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26669,
+      "length": 56,
+      "value": "\"Characteristics discovered for service \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 26724,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26776,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 27129,
+      "length": 34,
+      "value": "\"Device Info Characteristic found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 27480,
+      "length": 25,
+      "value": "\"TX Characteristic found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 27688,
+      "length": 25,
+      "value": "\"RX Characteristic found\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28008,
+      "length": 65,
+      "value": "\"Enabling notifications for \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28072,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 28134,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28201,
+      "length": 389,
+      "value": "\"Connected to Tower:\nTower ID: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28355,
+      "length": 5,
+      "value": "\"\nTower Name: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28438,
+      "length": 8,
+      "value": "\"\nFirmware Version: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28535,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28545,
+      "length": 3930,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 28668,
       "length": 14,
       "value": "\"Unknown Name\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 22989,
+      "offset": 28934,
       "length": 31,
       "value": "\"Enabling notifications failed\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23205,
+      "offset": 29150,
       "length": 77,
       "value": "\"Notifications enabled for characteristic: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23281,
+      "offset": 29226,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23330,
+      "offset": 29275,
       "length": 78,
       "value": "\"Notifications disabled for characteristic: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23407,
+      "offset": 29352,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23572,
-      "length": 37,
-      "value": "\"Did Update Value for characteristic\""
+      "offset": 29518,
+      "length": 72,
+      "value": "\"Did update value for characteristic: \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23806,
+      "offset": 29589,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 29717,
+      "length": 66,
+      "value": "\"Found characteristic: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 29782,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 29815,
+      "length": 59,
+      "value": "\"With value: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 29867,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 29873,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 30207,
+      "length": 33,
+      "value": "\"Canceling Peripheral connection\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
+      "kind": "StringLiteral",
+      "offset": 30533,
       "length": 45,
       "value": "\"Received data, CBOR byte string is invalid.\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 23957,
+      "offset": 30684,
       "length": 32,
       "value": "\"Now CBOR byte string is valid.\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "StringLiteral",
-      "offset": 24026,
+      "offset": 30753,
       "length": 42,
       "value": "\"Received data, CBOR byte string is valid\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/BLE\/BLECommunicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 24775,
+      "offset": 31502,
       "length": 4,
       "value": "true"
     },
@@ -8094,14 +8879,28 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Models\/Tower.swift",
       "kind": "StringLiteral",
-      "offset": 598,
+      "offset": 666,
       "length": 4,
       "value": "\"\u0000\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Models\/Tower.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 678,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Models\/Tower.swift",
+      "kind": "StringLiteral",
+      "offset": 891,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Models\/Tower.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
       "length": 2,
       "value": "\"\""
     },
@@ -8269,616 +9068,707 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1244,
+      "length": 11,
+      "value": "\"services\/\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1501,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1459,
+      "offset": 1533,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1516,
+      "offset": 1590,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 1678,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1733,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1752,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 1887,
+      "offset": 1961,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 2341,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2327,
+      "offset": 2401,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2420,
       "length": 23,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2368,
+      "offset": 2442,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2733,
+      "offset": 2807,
       "length": 45,
       "value": "\"Requesting session token for Tower from API\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2928,
       "length": 6,
       "value": "\"{id}\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 2942,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2893,
+      "offset": 2967,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2982,
+      "offset": 3056,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3014,
+      "offset": 3088,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3054,
+      "offset": 3128,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3142,
+      "offset": 3216,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3204,
+      "offset": 3278,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3286,
+      "offset": 3360,
       "length": 8,
       "value": "\"claims\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3405,
+      "offset": 3479,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 3705,
+      "offset": 3779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3910,
+      "offset": 3984,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4069,
       "length": 14,
       "value": "\"payload_auth\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 4085,
+      "offset": 4159,
       "length": 14,
       "value": "\"session_seed\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 4171,
+      "offset": 4245,
       "length": 10,
       "value": "\"tower_id\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 4905,
+      "offset": 4979,
       "length": 41,
       "value": "\"Requesting Tower configuration from API\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5028,
+      "offset": 5102,
       "length": 6,
       "value": "\"{id}\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5042,
+      "offset": 5116,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5067,
+      "offset": 5141,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5156,
+      "offset": 5230,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5187,
+      "offset": 5261,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5227,
+      "offset": 5301,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5315,
+      "offset": 5389,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 5533,
+      "offset": 5607,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5738,
+      "offset": 5812,
       "length": 9,
       "value": "\"towerId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 5820,
+      "offset": 5894,
       "length": 10,
       "value": "\"commands\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6418,
+      "offset": 6492,
       "length": 36,
       "value": "\"Requesting Tower commands from API\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6534,
+      "offset": 6608,
       "length": 6,
       "value": "\"{id}\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6548,
+      "offset": 6622,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6573,
+      "offset": 6647,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6662,
+      "offset": 6736,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6693,
+      "offset": 6767,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6733,
+      "offset": 6807,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 6821,
+      "offset": 6895,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 7039,
+      "offset": 7113,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "Array",
-      "offset": 7429,
+      "offset": 7503,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 7537,
+      "offset": 7611,
       "length": 9,
       "value": "\"towerId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 7629,
+      "offset": 7703,
       "length": 18,
       "value": "\"syncCommandCount\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 7727,
+      "offset": 7801,
       "length": 18,
       "value": "\"syncCommandStart\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 7816,
+      "offset": 7890,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 7903,
+      "offset": 7977,
       "length": 13,
       "value": "\"payloadAuth\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8691,
+      "offset": 8765,
       "length": 29,
       "value": "\"Sending Tower events to API\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8799,
+      "offset": 8873,
       "length": 6,
       "value": "\"{id}\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8813,
+      "offset": 8887,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8838,
+      "offset": 8912,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8927,
+      "offset": 9001,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8959,
+      "offset": 9033,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 8999,
+      "offset": 9073,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9087,
+      "offset": 9161,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "Array",
-      "offset": 9223,
+      "offset": 9297,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9287,
+      "offset": 9361,
       "length": 16,
       "value": "\"syncEventStart\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9370,
+      "offset": 9444,
       "length": 16,
       "value": "\"syncEventCount\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9454,
+      "offset": 9528,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9537,
+      "offset": 9611,
       "length": 13,
       "value": "\"payloadAuth\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 9792,
+      "offset": 9866,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9824,
+      "offset": 9898,
       "length": 33,
       "value": "\"Sent, status code \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 9856,
+      "offset": 9930,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10122,
+      "offset": 10196,
       "length": 55,
       "value": "\"Resetting backend events for \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10176,
+      "offset": 10250,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10268,
+      "offset": 10342,
       "length": 6,
       "value": "\"{id}\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10282,
+      "offset": 10356,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10307,
+      "offset": 10381,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10396,
+      "offset": 10470,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10428,
+      "offset": 10502,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10468,
+      "offset": 10542,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 10556,
+      "offset": 10630,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 10766,
+      "offset": 10840,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 11355,
+      "offset": 11079,
+      "length": 35,
+      "value": "\"getting ble services from backend\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 11253,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 11284,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 11324,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 11412,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11630,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "Array",
+      "offset": 12006,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 12111,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 12188,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 12449,
+      "length": 25,
+      "value": "\"Service \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 12465,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 12473,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 13031,
       "length": 32,
       "value": "\"Attempts remaining \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "StringLiteral",
-      "offset": 11386,
+      "offset": 13062,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 11558,
+      "offset": 13234,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 11797,
+      "offset": 13473,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 12154,
+      "offset": 13830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 12174,
+      "offset": 13850,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "BooleanLiteral",
-      "offset": 12187,
+      "offset": 13863,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "BooleanLiteral",
-      "offset": 12470,
+      "offset": 14146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager+Endpoints.swift",
       "kind": "IntegerLiteral",
-      "offset": 12573,
+      "offset": 14249,
       "length": 3,
       "value": "500"
     },
@@ -8892,1435 +9782,1421 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1875,
       "length": 8,
       "value": "\"device\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1834,
+      "offset": 1885,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 1916,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 1950,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1990,
+      "offset": 2041,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2169,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2176,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2196,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2234,
-      "length": 13,
-      "value": "\"SyncManager\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2323,
-      "length": 11,
-      "value": "\"HarborSDK\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2762,
-      "length": 12,
-      "value": "\"APIManager\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2895,
-      "length": 9,
-      "value": "\"BaseURL\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2906,
-      "length": 12,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2917,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2949,
-      "length": 32,
-      "value": "\"Setting Base URL to \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2980,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3025,
-      "length": 36,
-      "value": "\"Base URL already set to \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3060,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3401,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3420,
-      "length": 17,
-      "value": "\"Bearer \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3436,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3463,
-      "length": 18,
-      "value": "\"Access Token set\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 3920,
-      "length": 12,
-      "value": "\"APIManager\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4053,
-      "length": 9,
-      "value": "\"BaseURL\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4064,
-      "length": 26,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4089,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4121,
-      "length": 46,
-      "value": "\"Setting environment to \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4166,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4215,
-      "length": 50,
-      "value": "\"Environment already set to \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4264,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4536,
-      "length": 18,
-      "value": "\"Missing Tower ID\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4579,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4646,
-      "length": 63,
-      "value": "\"Connected to Tower with ID: \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 4708,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5005,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 5109,
-      "length": 24,
-      "value": "\"No tower configuration\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5162,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "Array",
-      "offset": 5266,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 5462,
-      "length": 42,
-      "value": "\"Unable to decode CBOR command \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 5503,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5537,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5700,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5736,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "Array",
-      "offset": 5780,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6080,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 6190,
-      "length": 44,
-      "value": "\"Error sending packet \""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 6233,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6298,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 6563,
-      "length": 11,
-      "value": "\"Undefined\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6674,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6865,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "Array",
-      "offset": 6871,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6947,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7085,
-      "length": 40,
-      "value": "\"Success requesting Tower Configuration\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7251,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7364,
-      "length": 25,
-      "value": "\"Tower discovery started\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7633,
-      "length": 38,
-      "value": "\"6E400001-B5A3-F393-E0A9-E50E24DCCA9E\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7739,
-      "length": 38,
-      "value": "\"6E400002-B5A3-F393-E0A9-E50E24DCCA9E\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7845,
-      "length": 38,
-      "value": "\"6E400003-B5A3-F393-E0A9-E50E24DCCA9E\""
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 7949,
+      "offset": 2679,
       "length": 17,
       "value": "\"BLECommunicator\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8365,
+      "offset": 3046,
       "length": 12,
       "value": "\"BLEManager\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8609,
+      "offset": 3129,
+      "length": 13,
+      "value": "\"SyncManager\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3218,
+      "length": 11,
+      "value": "\"HarborSDK\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3657,
+      "length": 12,
+      "value": "\"APIManager\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3790,
+      "length": 9,
+      "value": "\"BaseURL\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3801,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3812,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3844,
+      "length": 32,
+      "value": "\"Setting Base URL to \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3875,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3920,
+      "length": 36,
+      "value": "\"Base URL already set to \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3955,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4296,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4315,
+      "length": 17,
+      "value": "\"Bearer \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4331,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4358,
+      "length": 18,
+      "value": "\"Access Token set\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4815,
+      "length": 12,
+      "value": "\"APIManager\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4948,
+      "length": 9,
+      "value": "\"BaseURL\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4959,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4984,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5016,
+      "length": 46,
+      "value": "\"Setting environment to \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5061,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5110,
+      "length": 50,
+      "value": "\"Environment already set to \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5159,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5431,
+      "length": 18,
+      "value": "\"Missing Tower ID\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5474,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5541,
+      "length": 63,
+      "value": "\"Connected to Tower with ID: \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5603,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5900,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6004,
+      "length": 24,
+      "value": "\"No tower configuration\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6057,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "Array",
+      "offset": 6161,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6357,
+      "length": 42,
+      "value": "\"Unable to decode CBOR command \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6398,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6432,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6595,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6631,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "Array",
+      "offset": 6675,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6975,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7085,
+      "length": 44,
+      "value": "\"Error sending packet \""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7128,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7193,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7458,
+      "length": 11,
+      "value": "\"Undefined\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7569,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7760,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "Array",
+      "offset": 7766,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7842,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7980,
+      "length": 40,
+      "value": "\"Success requesting Tower Configuration\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8146,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8259,
+      "length": 38,
+      "value": "\"Looking services for Tower discovery\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8348,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9066,
+      "length": 26,
+      "value": "\"Starting tower discovery\""
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9523,
       "length": 52,
       "value": "\"Connecting to Tower \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8660,
+      "offset": 9574,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8751,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8792,
+      "offset": 9601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8945,
+      "offset": 9754,
       "length": 23,
       "value": "\"BLE is ON. Connecting\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9125,
+      "offset": 9934,
       "length": 18,
       "value": "\"Peripheral found\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9337,
+      "offset": 10146,
       "length": 12,
       "value": "\"BLE is OFF\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 9379,
+      "offset": 10188,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 9533,
+      "offset": 10342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9574,
+      "offset": 10383,
       "length": 23,
       "value": "\"BLE is not powered on\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9706,
+      "offset": 10515,
       "length": 14,
       "value": "\"Trying again\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 9791,
+      "offset": 10600,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10252,
+      "offset": 11061,
       "length": 51,
       "value": "\"Connected to Tower \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10302,
+      "offset": 11111,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10607,
+      "offset": 11416,
       "length": 29,
       "value": "\"Tower disconnected delegate\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12206,
+      "offset": 13015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12459,
+      "offset": 13268,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12779,
+      "offset": 13588,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13118,
+      "offset": 13927,
       "length": 62,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13156,
+      "offset": 13965,
       "length": 22,
       "value": "\"Unknown packet error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13179,
+      "offset": 13988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13401,
+      "offset": 14210,
       "length": 22,
       "value": "\"Unknown packet error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13493,
+      "offset": 14302,
       "length": 69,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13531,
+      "offset": 14340,
       "length": 29,
       "value": "\"Unknown communication error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13561,
+      "offset": 14370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 13659,
+      "offset": 14468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13762,
+      "offset": 14571,
       "length": 29,
       "value": "\"Unknown communication error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14432,
+      "offset": 15241,
       "length": 15,
       "value": "\"Handle retry?\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 14541,
+      "offset": 15350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14764,
+      "offset": 15573,
       "length": 35,
       "value": "\"Removing session token from cache\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 14938,
+      "offset": 15747,
       "length": 28,
       "value": "\"Retrying establish session\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15110,
+      "offset": 15919,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16284,
+      "offset": 17093,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 16477,
+      "offset": 17286,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16493,
+      "offset": 17302,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17498,
+      "offset": 18307,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17751,
+      "offset": 18560,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17905,
+      "offset": 18714,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17954,
+      "offset": 18763,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 18453,
+      "offset": 19262,
       "length": 41,
       "value": "\"Session Request without payload results\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 19344,
+      "offset": 20153,
       "length": 35,
       "value": "\"Session established with to Tower\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 20386,
+      "offset": 21195,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20519,
+      "offset": 21328,
       "length": 25,
       "value": "\"Getting session request\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 20586,
+      "offset": 21395,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 20642,
+      "offset": 21451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 20802,
+      "offset": 21611,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 20836,
+      "offset": 21645,
       "length": 32,
       "value": "\"Looking session token in cache\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21110,
+      "offset": 21919,
       "length": 32,
       "value": "\"Using session token from cache\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21371,
+      "offset": 22180,
       "length": 34,
       "value": "\"Session token not found in cache\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 21829,
+      "offset": 22638,
       "length": 34,
       "value": "\"Requested session token from API\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22024,
+      "offset": 22833,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22556,
+      "offset": 23365,
       "length": 33,
       "value": "\"Session token request succesful\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23364,
+      "offset": 24173,
       "length": 29,
       "value": "\"Starting sendRequestSession\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23839,
+      "offset": 24648,
       "length": 32,
       "value": "\"Request Session packet created\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 24701,
+      "offset": 25510,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 24782,
+      "offset": 25591,
       "length": 21,
       "value": "\"Terminating session\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 25270,
+      "offset": 26079,
       "length": 49,
       "value": "\"Sync complete. Sending Terminate Session Packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 25782,
+      "offset": 26591,
       "length": 20,
       "value": "\"Session terminated\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 26063,
+      "offset": 26872,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 30318,
+      "offset": 31127,
       "length": 34,
       "value": "\"Sending RequestSyncstatus packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 30547,
+      "offset": 31356,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 30608,
+      "offset": 31417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 30673,
+      "offset": 31482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 32046,
+      "offset": 32855,
       "length": 25,
       "value": "\"Sending syncPull packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 32262,
+      "offset": 33071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 32323,
+      "offset": 33132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 33252,
+      "offset": 34061,
       "length": 25,
       "value": "\"Sending syncPush packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 34020,
+      "offset": 34829,
       "length": 31,
       "value": "\"Sending MarkSeenEvents packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 34822,
+      "offset": 35631,
       "length": 34,
       "value": "\"Sending ResetEventCounter packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 35647,
+      "offset": 36456,
       "length": 36,
       "value": "\"Sending ResetCommandCounter packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 36412,
+      "offset": 37221,
       "length": 31,
       "value": "\"Sending AddClientEvent packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 37675,
+      "offset": 38484,
       "length": 48,
       "value": "\"Sending requestLockerAvailabilityPacket packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 39277,
+      "offset": 40086,
       "length": 37,
       "value": "\"Sending FindLockersWithToken packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 40649,
+      "offset": 41458,
       "length": 36,
       "value": "\"Sending OpenLockerWithToken packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 40873,
+      "offset": 41682,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 42632,
+      "offset": 43441,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 43133,
+      "offset": 43942,
       "length": 36,
       "value": "\"Sending OpenAvailableLocker packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 43366,
+      "offset": 44175,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 44215,
+      "offset": 45024,
       "length": 29,
       "value": "\"Sending ReOpenLocker packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 44434,
+      "offset": 45243,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 45233,
+      "offset": 46042,
       "length": 32,
       "value": "\"Sending checkLockerDoor packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 45467,
+      "offset": 46276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 46068,
+      "offset": 46877,
       "length": 34,
       "value": "\"Sending RevertLockerState packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 47613,
+      "offset": 48422,
       "length": 30,
       "value": "\"Sending SetKeypadCode packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 48674,
+      "offset": 49483,
       "length": 26,
       "value": "\"Sending TapLocker packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 49781,
+      "offset": 50590,
       "length": 36,
       "value": "\"Sending CheckAllLockerDoors packet\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 50600,
+      "offset": 51409,
       "length": 40,
       "value": "\"Sending raw packet \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 50639,
+      "offset": 51448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 50777,
+      "offset": 51586,
       "length": 51,
       "value": "\"Unable to decode CBOR command \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 50827,
+      "offset": 51636,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 51049,
+      "offset": 51858,
       "length": 20,
       "value": "\"Raw Packet created\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 51240,
+      "offset": 52049,
       "length": 90,
       "value": "\"Got response from rawPacket \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 51290,
+      "offset": 52099,
       "length": 1,
       "value": "\". Response \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 51323,
+      "offset": 52132,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "StringLiteral",
-      "offset": 51329,
+      "offset": 52138,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/PublicInterface\/HarborSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 51498,
+      "offset": 52307,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 685,
+      "offset": 773,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 706,
+      "offset": 794,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 730,
+      "offset": 818,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 824,
+      "offset": 912,
       "length": 43,
       "value": "\"https:\/\/api.dev.harborlockers.com\/sdk\/v1\/\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 898,
+      "offset": 986,
       "length": 47,
       "value": "\"https:\/\/api.sandbox.harborlockers.com\/sdk\/v1\/\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 979,
+      "offset": 1067,
       "length": 39,
       "value": "\"https:\/\/api.harborlockers.com\/sdk\/v1\/\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1212,
       "length": 13,
       "value": "\"Development\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1256,
       "length": 9,
       "value": "\"Sandbox\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 1211,
+      "offset": 1299,
       "length": 12,
       "value": "\"Production\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 685,
+      "offset": 773,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 706,
+      "offset": 794,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 730,
+      "offset": 818,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 1358,
       "length": 18,
       "value": "\"Harbor API Error\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "Dictionary",
-      "offset": 2360,
+      "offset": 2519,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "Dictionary",
-      "offset": 2871,
+      "offset": 3030,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2937,
+      "offset": 3096,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2944,
+      "offset": 3103,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "Dictionary",
-      "offset": 3047,
+      "offset": 3206,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3081,
+      "offset": 3240,
       "length": 107,
       "value": "\"Error \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3270,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3128,
+      "offset": 3287,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3187,
+      "offset": 3346,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 3639,
       "length": 79,
       "value": "\"Error \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3510,
+      "offset": 3669,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3527,
+      "offset": 3686,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3558,
+      "offset": 3717,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 3946,
+      "offset": 4105,
       "length": 8,
       "value": "\"detail\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 4239,
+      "offset": 4398,
       "length": 5,
       "value": "\"msg\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 4260,
+      "offset": 4419,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 4333,
+      "offset": 4492,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4523,
       "length": 27,
       "value": "\"Unknown Error Description\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2361,
       "length": 10,
       "value": "\"HarborLockersSDK.APIManager\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5172,
+      "offset": 5331,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 5567,
+      "offset": 5726,
       "length": 13,
       "value": "\"certificate\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 5590,
+      "offset": 5749,
       "length": 5,
       "value": "\"cer\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6503,
+      "offset": 6662,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6510,
+      "offset": 6669,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6583,
+      "offset": 6742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6617,
+      "offset": 6776,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6626,
+      "offset": 6785,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6699,
+      "offset": 6858,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6734,
+      "offset": 6893,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 6790,
+      "offset": 6949,
       "length": 3,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7493,
+      "offset": 7652,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7537,
+      "offset": 7696,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7648,
+      "offset": 7807,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7677,
+      "offset": 7836,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/API\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7701,
+      "offset": 7860,
       "length": 2,
       "value": "\"\""
     },
