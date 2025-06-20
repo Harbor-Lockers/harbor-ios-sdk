@@ -1,7 +1,7 @@
 framework module HarborLockersSDK {
   umbrella header "HarborLockersSDK.h"
-
   export *
+
   module * { export * }
 }
 

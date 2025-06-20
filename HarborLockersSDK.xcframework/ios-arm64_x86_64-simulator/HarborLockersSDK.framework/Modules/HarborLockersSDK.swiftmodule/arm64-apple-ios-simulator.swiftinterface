@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name HarborLockersSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name HarborLockersSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreBluetooth
 import Foundation
 @_exported import HarborLockersSDK
@@ -9,12 +9,13 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-public typealias BLEConnectionResult = (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void
+import _SwiftConcurrencyShims
+public typealias BLEConnectionResult = (_ result: Swift.String?, _ error: Foundation.NSError?) -> Swift.Void
 public typealias BlinkHandlerResult = (retry: Swift.Bool, delay: Foundation.TimeInterval?)
-public typealias BLEResponseHandler = (_ responseData: Foundation.Data?, _ error: (any Swift.Error)?) -> HarborLockersSDK.BlinkHandlerResult
+public typealias BLEResponseHandler = (_ responseData: Foundation.Data?, _ error: Foundation.NSError?) -> HarborLockersSDK.BlinkHandlerResult
 public typealias BLETowersDiscoveredHandler = (_ peripherals: [HarborLockersSDK.Tower]) -> Swift.Void
 public typealias SyncCompletionHandler = (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
-public typealias SendEventsToServerResponseHandler = (_ success: Swift.Bool, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias SendEventsToServerResponseHandler = (_ success: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void
 @objc public enum TowerType : Swift.Int {
   case Harbor = 1
   case BlinkServer = 2
@@ -126,6 +127,64 @@ extension HarborLockersSDK.HarborSDK {
   @objc dynamic public func sendCheckAllLockerDoors(completionHandler: @escaping (_ lockerDoorsOpen: Foundation.Data?, _ error: Foundation.NSError?) -> Swift.Void)
   @objc dynamic public func sendRawPacket(cbor: Foundation.Data, completionHandler: @escaping (_ response: [Swift.String : Any]?, _ error: Foundation.NSError?) -> Foundation.TimeInterval)
 }
+@_inheritsConvenienceInitializers @objc public class HarborError : ObjectiveC.NSObject {
+  @objc public static func isSDKError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isAPIError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isFirmwareError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isAuthError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isPermissionsError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isCommunicationError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isSessionError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isHTTPError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isCancelled(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isBluetoothError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc public static func isNetworkError(_ error: Foundation.NSError?) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum ErrorDomain : Swift.Int {
+  case SDK = 1
+  case API = 2
+  case FirmwareBlink = 3
+  case FirmwareSession = 4
+  public var domainName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SDKErrorCode : Swift.Int {
+  case unknown = 0
+  case packetNotEncoded = 100
+  case packetNotDecoded = 101
+  case notConnectedWithTower = 102
+  case responseTimeout = 103
+  case canceled = 104
+  case bluetoothOff = 105
+  case discoveryFailed = 106
+  case discoveryCharacteristicFailed = 107
+  case peripheralConnectionFailed = 108
+  case characteristicNotificationFailed = 109
+  case updateCharacteristicFailed = 110
+  case noPacketInResponse = 111
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class HarborErrorFactory : ObjectiveC.NSObject {
+  @objc public static func error(_ code: HarborLockersSDK.SDKErrorCode) -> Foundation.NSError
+  @objc public static func error(domain: HarborLockersSDK.ErrorDomain, code: Swift.Int, description: Swift.String = "Unknown error") -> Foundation.NSError
+  @objc override dynamic public init()
+  @objc deinit
+}
 public typealias APIResponseWithStatusCode = (_ responseCode: Swift.Int, _ error: Foundation.NSError?) -> Swift.Void
 public typealias RequestTowerSessionAPIResponse = (_ payload: Foundation.Data?, _ payloadAuth: Foundation.Data?, _ sessionSeed: Foundation.Data?, _ towerId: Foundation.Data?, _ error: Foundation.NSError?) -> Swift.Void
 public typealias RequestTowerConfigurationAPIResponse = (_ towerId: Foundation.Data?, _ commands: [Foundation.Data]?, _ error: Foundation.NSError?) -> Swift.Void
@@ -154,6 +213,12 @@ extension HarborLockersSDK.HarborLogLevel : Swift.RawRepresentable {}
 extension HarborLockersSDK.SessionPermission : Swift.Equatable {}
 extension HarborLockersSDK.SessionPermission : Swift.Hashable {}
 extension HarborLockersSDK.SessionPermission : Swift.RawRepresentable {}
+extension HarborLockersSDK.ErrorDomain : Swift.Equatable {}
+extension HarborLockersSDK.ErrorDomain : Swift.Hashable {}
+extension HarborLockersSDK.ErrorDomain : Swift.RawRepresentable {}
+extension HarborLockersSDK.SDKErrorCode : Swift.Equatable {}
+extension HarborLockersSDK.SDKErrorCode : Swift.Hashable {}
+extension HarborLockersSDK.SDKErrorCode : Swift.RawRepresentable {}
 extension HarborLockersSDK.Environment : Swift.Equatable {}
 extension HarborLockersSDK.Environment : Swift.Hashable {}
 extension HarborLockersSDK.Environment : Swift.RawRepresentable {}
