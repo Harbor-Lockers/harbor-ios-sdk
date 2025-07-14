@@ -150,6 +150,7 @@ extension HarborLockersSDK.HarborSDK {
   public var domainName: Swift.String {
     get
   }
+  public static func domainName(for domain: HarborLockersSDK.ErrorDomain) -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

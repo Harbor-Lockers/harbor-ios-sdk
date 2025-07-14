@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0u7G/72eF4b7BOFK+nyQHNAAqxM=
+		rLfkJ54OfQPE+eGVJfRl375ICEs=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iYNwmPlrpvClMx9rKHaKp6YIW+E=
+		JF41lxYLEVsCsAqKOq1PiARdIy0=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iYNwmPlrpvClMx9rKHaKp6YIW+E=
+		JF41lxYLEVsCsAqKOq1PiARdIy0=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vnKTsQkrHxwnmkkLb8Dzxii7jbs=
+		YAa9W78HTtrQ4H4oQtA/cWV5NrI=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0u7G/72eF4b7BOFK+nyQHNAAqxM=
+		rLfkJ54OfQPE+eGVJfRl375ICEs=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DbVNQgxDv/f6ucUdYylnB8weNYQ=
+		6glNCd19mGWluKcJsAI2DXu7yz0=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DbVNQgxDv/f6ucUdYylnB8weNYQ=
+		6glNCd19mGWluKcJsAI2DXu7yz0=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JhO/B1kt/FYrXhGGNFzPn1xjxeM=
+		zFHMXH+oGPHAKsmZXm+qbz76Ah4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oHqVxuka93/2h6kimIHoSTyLqbShROIChXDIVDyaxT0=
+			x+2caelFTGx0udHQA4TqjJHax9QLAB3iAur0YyG6mCs=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vys9bwWcIhxQ/YsjIOULklS8lWIC1YYTNaIgBU4DeF8=
+			ta1MFNYo6av0hoyeDHcFfPIO7yLhnVasWOs0Rd1SThY=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vys9bwWcIhxQ/YsjIOULklS8lWIC1YYTNaIgBU4DeF8=
+			ta1MFNYo6av0hoyeDHcFfPIO7yLhnVasWOs0Rd1SThY=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S/+1qLNJoEJ1dh4ucCAUwawCCefdODqfuQQux/vn24M=
+			daQmCqB9b8bYVWWU7Ubve2hZJg5snWxa8BSLNcI8nL0=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oHqVxuka93/2h6kimIHoSTyLqbShROIChXDIVDyaxT0=
+			x+2caelFTGx0udHQA4TqjJHax9QLAB3iAur0YyG6mCs=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2e4SFR6SCDzW4wZLIyfU4AQ9Fc/D7wS126YHfUg0e/A=
+			fnr7iez97e1tX6ColsBFWYvFCD97xyhhSkSN7I2XLxc=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2e4SFR6SCDzW4wZLIyfU4AQ9Fc/D7wS126YHfUg0e/A=
+			fnr7iez97e1tX6ColsBFWYvFCD97xyhhSkSN7I2XLxc=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a1HaMCcev7lv2BGBe+yDUUqb0LpUkmHf22mYPc9E4X8=
+			e35qjLqI4Y2h9383zPeGuDQ6p1uc2Eqst8TNn5vIc7A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
