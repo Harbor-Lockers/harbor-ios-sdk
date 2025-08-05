@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/HarborLockersSDK-Swift.h</key>
 		<data>
-		b/f8wwZrYeB0aaPBQY7EvBhIWZg=
+		T3XKh/mXTN/BK902ksD9rWHjPjs=
 		</data>
 		<key>Headers/HarborLockersSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rLfkJ54OfQPE+eGVJfRl375ICEs=
+		+bDbmq/NqoNAuZI8xvBA+8Ec8Bg=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JF41lxYLEVsCsAqKOq1PiARdIy0=
+		eIkKgcBZU+HMZUIyBBgPzH9JTRY=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JF41lxYLEVsCsAqKOq1PiARdIy0=
+		eIkKgcBZU+HMZUIyBBgPzH9JTRY=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YAa9W78HTtrQ4H4oQtA/cWV5NrI=
+		oVIIK6USWfveqZoTSsaqKP7lfE4=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rLfkJ54OfQPE+eGVJfRl375ICEs=
+		+bDbmq/NqoNAuZI8xvBA+8Ec8Bg=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6glNCd19mGWluKcJsAI2DXu7yz0=
+		mWFtrJGYoes4Yma3vjwt2OF8y1I=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6glNCd19mGWluKcJsAI2DXu7yz0=
+		mWFtrJGYoes4Yma3vjwt2OF8y1I=
 		</data>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zFHMXH+oGPHAKsmZXm+qbz76Ah4=
+		p/KYI6EykOA1ScUuDeNZHuZcnOY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZVvaFt0QrPU4fG8ej8zA6WlBNyV7sKkit2AQ6x1W0A=
+			ojhvwB3SM/YgwaX1ij175XhkHox+l0jo8tJbaXa7uJw=
 			</data>
 		</dict>
 		<key>Headers/HarborLockersSDK.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x+2caelFTGx0udHQA4TqjJHax9QLAB3iAur0YyG6mCs=
+			DG7XtYt9NvX5URsKQuiLDan56jEk8pKf52bQ0r0tjOo=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ta1MFNYo6av0hoyeDHcFfPIO7yLhnVasWOs0Rd1SThY=
+			l3LeVKVTeukosqrL2S+uXDrMfGFRGXOkk2UcE/IsIFA=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ta1MFNYo6av0hoyeDHcFfPIO7yLhnVasWOs0Rd1SThY=
+			l3LeVKVTeukosqrL2S+uXDrMfGFRGXOkk2UcE/IsIFA=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			daQmCqB9b8bYVWWU7Ubve2hZJg5snWxa8BSLNcI8nL0=
+			NCzVFykV19qhPCSOL6Iwk0w6DbixZTuH7huKK1/vkKo=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x+2caelFTGx0udHQA4TqjJHax9QLAB3iAur0YyG6mCs=
+			DG7XtYt9NvX5URsKQuiLDan56jEk8pKf52bQ0r0tjOo=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fnr7iez97e1tX6ColsBFWYvFCD97xyhhSkSN7I2XLxc=
+			Fo6fjVRcd9kPKfOmyOY9XKAcmVOiK2PP3+BGoX6dhf8=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fnr7iez97e1tX6ColsBFWYvFCD97xyhhSkSN7I2XLxc=
+			Fo6fjVRcd9kPKfOmyOY9XKAcmVOiK2PP3+BGoX6dhf8=
 			</data>
 		</dict>
 		<key>Modules/HarborLockersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e35qjLqI4Y2h9383zPeGuDQ6p1uc2Eqst8TNn5vIc7A=
+			RtyWyjcqQ4G7cu3m2h1gKFsGd9gJ89RuB2gptrB6mU8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

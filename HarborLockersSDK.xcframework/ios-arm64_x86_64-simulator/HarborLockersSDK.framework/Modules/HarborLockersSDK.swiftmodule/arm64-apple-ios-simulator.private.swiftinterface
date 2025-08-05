@@ -171,6 +171,7 @@ extension HarborLockersSDK.HarborSDK {
   case characteristicNotificationFailed = 109
   case updateCharacteristicFailed = 110
   case noPacketInResponse = 111
+  case connectionTimeout = 112
   public var description: Swift.String {
     get
   }

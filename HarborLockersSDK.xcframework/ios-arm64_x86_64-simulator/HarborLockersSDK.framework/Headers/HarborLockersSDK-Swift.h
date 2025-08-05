@@ -658,6 +658,7 @@ typedef SWIFT_ENUM(NSInteger, SDKErrorCode, open) {
   SDKErrorCodeCharacteristicNotificationFailed = 109,
   SDKErrorCodeUpdateCharacteristicFailed = 110,
   SDKErrorCodeNoPacketInResponse = 111,
+  SDKErrorCodeConnectionTimeout = 112,
 };
 
 typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
@@ -1365,6 +1366,7 @@ typedef SWIFT_ENUM(NSInteger, SDKErrorCode, open) {
   SDKErrorCodeCharacteristicNotificationFailed = 109,
   SDKErrorCodeUpdateCharacteristicFailed = 110,
   SDKErrorCodeNoPacketInResponse = 111,
+  SDKErrorCodeConnectionTimeout = 112,
 };
 
 typedef SWIFT_ENUM(NSInteger, SessionPermission, open) {
