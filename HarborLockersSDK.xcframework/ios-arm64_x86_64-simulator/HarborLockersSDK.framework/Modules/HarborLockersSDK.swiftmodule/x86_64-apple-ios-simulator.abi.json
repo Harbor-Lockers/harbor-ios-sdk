@@ -6807,6 +6807,47 @@
           },
           {
             "kind": "Var",
+            "name": "connectionTimeout",
+            "printedName": "connectionTimeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(HarborLockersSDK.SDKErrorCode.Type) -> HarborLockersSDK.SDKErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKErrorCode",
+                    "printedName": "HarborLockersSDK.SDKErrorCode",
+                    "usr": "c:@M@HarborLockersSDK@E@SDKErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "HarborLockersSDK.SDKErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKErrorCode",
+                        "printedName": "HarborLockersSDK.SDKErrorCode",
+                        "usr": "c:@M@HarborLockersSDK@E@SDKErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@HarborLockersSDK@E@SDKErrorCode@SDKErrorCodeConnectionTimeout",
+            "mangledName": "$s16HarborLockersSDK12SDKErrorCodeO17connectionTimeoutyA2CmF",
+            "moduleName": "HarborLockersSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -8925,112 +8966,119 @@
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 259,
+      "offset": 238,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 304,
+      "offset": 357,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 364,
+      "offset": 417,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 465,
       "length": 28,
       "value": "\"HarborSessionTokenCacheKey\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 537,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 530,
+      "offset": 583,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 644,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 635,
+      "offset": 688,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 674,
+      "offset": 727,
       "length": 38,
       "value": "\"6E400001-B5A3-F393-E0A9-E50E24DCCA9E\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 810,
       "length": 38,
       "value": "\"6E400002-B5A3-F393-E0A9-E50E24DCCA9E\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 893,
       "length": 38,
       "value": "\"6E400003-B5A3-F393-E0A9-E50E24DCCA9E\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 931,
+      "offset": 984,
       "length": 38,
       "value": "\"6E400004-B5A3-F393-E0A9-E50E24DCCA9E\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1008,
+      "offset": 1061,
       "length": 6,
       "value": "\"FE59\""
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1071,
+      "offset": 1124,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1096,
+      "offset": 1149,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/HarborConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1113,
+      "offset": 1166,
       "length": 1,
       "value": "3"
     },
@@ -9337,8 +9385,15 @@
     },
     {
       "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/ErrorHandling.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4008,
+      "length": 3,
+      "value": "112"
+    },
+    {
+      "filePath": "\/Users\/gitlab\/builds\/luxer-one\/harborlockers\/hal-ios-sdk\/ios\/HarborLockersSDK\/Utils\/ErrorHandling.swift",
       "kind": "StringLiteral",
-      "offset": 5512,
+      "offset": 5606,
       "length": 15,
       "value": "\"Unknown error\""
     },
